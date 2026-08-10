@@ -55,34 +55,43 @@ still existing.
 
 ## Getting the code
 
-It comes as a ZIP in the **Claude** shared drive, under `_ENGINE INSTALL`. You
-already have access to that drive, so there is nothing to sign up for.
+    https://github.com/iziagency/sierra-engine
 
-1. Download `Sierra Engine install <date>.zip` from that folder.
-2. Extract it to `C:\`. The ZIP contains a single `sierra-pacific` folder, so you
-   end up with `C:\sierra-pacific` and every command in this guide matches
-   without editing.
-3. Confirm `C:\sierra-pacific\deploy\windows\install.ps1` exists. If it does not,
-   the ZIP was extracted one level too deep — a common one is
-   `C:\sierra-pacific\sierra-pacific\`. Move the inner folder up.
+No account, no invitation, no sign-up. Either way works:
 
-The ZIP is the engine only. It deliberately does not carry your playbooks or any
-client file: the engine reads those from Slack and from Drive at run time, and
-shipping copies of them would just create a second, staler set.
+**With git** — recommended, because updating later is one command:
+
+```powershell
+git clone https://github.com/iziagency/sierra-engine.git C:\sierra-pacific
+```
+
+Needs [Git for Windows](https://git-scm.com/download/win) first.
+
+**Without git** — open the page, green *Code* button, *Download ZIP*. Extract it
+to `C:\` and rename the folder from `sierra-engine-main` to `sierra-pacific`, so
+every command in this guide matches without editing. Then confirm
+`C:\sierra-pacific\deploy\windows\install.ps1` exists; if it does not, the ZIP
+was extracted one level too deep.
 
 ### Updates
 
-For now, a new ZIP in the same folder, extracted over the top, then:
-
 ```powershell
-Restart-ScheduledTask -TaskName SierraEngine
+cd C:\sierra-pacific; git pull; Restart-ScheduledTask -TaskName SierraEngine
 ```
 
-Once this is running and you want updates to be one command instead of a
-download, ask Rafael for a **deploy key**: you generate an SSH key here, send him
-the public half, and after that `git pull` updates the engine in place. The
-private half never leaves this PC. Worth doing, but not worth blocking the first
-install on.
+If you downloaded the ZIP instead, download it again and extract over the top,
+then restart the task.
+
+### What is not in the repo, and why
+
+The engine, and nothing else. No playbooks, no meeting notes, no client file —
+the engine reads all of that from Slack and from Drive while it runs, so shipping
+copies would only create a second, staler set. The client names in the comments
+and tests are invented; the rules they document are real.
+
+No credential is in here either. The Slack tokens, the Drive service-account key
+and the model session are all created on this machine, by you. That is the point:
+they never travel, and nothing depends on a contractor's account.
 
 ## The Slack tokens
 
