@@ -36,7 +36,7 @@ can run it early just to see what is still missing.
 |---|------|---------------|
 | 1 | **Windows PC that stays on** | Any machine that is not shut down at night. The screen may sleep and lock; the machine may not. The installer turns sleep off for you. |
 | 2 | **Python 3.12 or newer** | [python.org](https://www.python.org/downloads/windows/) — tick **"Add python.exe to PATH"** during setup. |
-| 3 | **The engine files** | A ZIP in the **Claude** shared drive, under `_ENGINE INSTALL`. See *Getting the code* below. Nothing to install and no account to create. Any path works; the commands here assume `C:\sierra-pacific`. |
+| 3 | **The engine files** | `git clone https://github.com/iziagency/sierra-engine.git C:\sierra-pacific`, or download the ZIP from that page. Public repo — no account, no invitation. See *Getting the code* below. Any path works; the commands here assume `C:\sierra-pacific`. |
 | 4 | **Claude Code, signed in as you** | Install [Node.js LTS](https://nodejs.org/), then `npm i -g @anthropic-ai/claude-code`. Open a terminal **as the Windows user that will host the engine**, run `claude`, then `/login`. This is the step that decides whose plan pays. |
 | 5 | **`watcher\.env.sierra`** | The two Slack tokens and the channel allowlist. You create this file yourself, on this machine, from values you read out of Slack. See *The Slack tokens* below. |
 | 6 | **A Google Drive credential** | See *The Drive credential* below. Read it before you install — it is the one thing that will quietly break a week later if you skip it. |
