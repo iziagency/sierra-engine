@@ -1,0 +1,5686 @@
+[
+ {
+  "name": "p1_doing_business_as_or_dba",
+  "page": 1,
+  "type": "text",
+  "label": "Doing business as or DBA",
+  "group": "p1_doing_business_as_or_dba"
+ },
+ {
+  "name": "p1_first_named_insured_on_filing",
+  "page": 1,
+  "type": "text",
+  "label": "First named insured on filing",
+  "group": "p1_first_named_insured_on_filing"
+ },
+ {
+  "name": "p1_fein_or_social_security_number",
+  "page": 1,
+  "type": "text",
+  "label": "FEIN or social security number",
+  "group": "p1_fein_or_social_security_number"
+ },
+ {
+  "name": "p1_company_sole",
+  "page": 1,
+  "type": "checkbox",
+  "label": "Company - Sole proprietor",
+  "group": "p1_company"
+ },
+ {
+  "name": "p1_company_corp",
+  "page": 1,
+  "type": "checkbox",
+  "label": "Company - Corporation",
+  "group": "p1_company"
+ },
+ {
+  "name": "p1_company_llc",
+  "page": 1,
+  "type": "checkbox",
+  "label": "Company - LLC",
+  "group": "p1_company"
+ },
+ {
+  "name": "p1_owner_name",
+  "page": 1,
+  "type": "text",
+  "label": "Owner name",
+  "group": "p1_owner_name"
+ },
+ {
+  "name": "p1_owner_email",
+  "page": 1,
+  "type": "text",
+  "label": "Owner email",
+  "group": "p1_owner_email"
+ },
+ {
+  "name": "p1_contact_name",
+  "page": 1,
+  "type": "text",
+  "label": "Contact name",
+  "group": "p1_contact_name"
+ },
+ {
+  "name": "p1_contact_email",
+  "page": 1,
+  "type": "text",
+  "label": "Contact email",
+  "group": "p1_contact_email"
+ },
+ {
+  "name": "p1_contact_cell_phone",
+  "page": 1,
+  "type": "text",
+  "label": "Contact cell phone",
+  "group": "p1_contact_cell_phone"
+ },
+ {
+  "name": "p1_contact_title",
+  "page": 1,
+  "type": "text",
+  "label": "Contact title",
+  "group": "p1_contact_title"
+ },
+ {
+  "name": "p1_office_phone",
+  "page": 1,
+  "type": "text",
+  "label": "Office phone",
+  "group": "p1_office_phone"
+ },
+ {
+  "name": "p1_language_english",
+  "page": 1,
+  "type": "checkbox",
+  "label": "Language - English",
+  "group": "p1_language"
+ },
+ {
+  "name": "p1_language_spanish",
+  "page": 1,
+  "type": "checkbox",
+  "label": "Language - Spanish",
+  "group": "p1_language"
+ },
+ {
+  "name": "total_vehicles",
+  "page": 1,
+  "type": "text",
+  "label": "Total number of vehicles",
+  "group": "total_vehicles"
+ },
+ {
+  "name": "total_drivers",
+  "page": 1,
+  "type": "text",
+  "label": "Total number of drivers",
+  "group": "total_drivers"
+ },
+ {
+  "name": "p1_state_filing_number",
+  "page": 1,
+  "type": "text",
+  "label": "State filing number",
+  "group": "p1_state_filing_number"
+ },
+ {
+  "name": "p1_us_dot_number",
+  "page": 1,
+  "type": "text",
+  "label": "US DOT number",
+  "group": "p1_us_dot_number"
+ },
+ {
+  "name": "p1_mc_number",
+  "page": 1,
+  "type": "text",
+  "label": "MC number",
+  "group": "p1_mc_number"
+ },
+ {
+  "name": "p1_cross_state_lines_no",
+  "page": 1,
+  "type": "checkbox",
+  "label": "Cross state lines - No",
+  "group": "p1_cross_state_lines"
+ },
+ {
+  "name": "p1_cross_state_lines_yes",
+  "page": 1,
+  "type": "checkbox",
+  "label": "Cross state lines - Yes",
+  "group": "p1_cross_state_lines"
+ },
+ {
+  "name": "p1_mailing_full_address",
+  "page": 1,
+  "type": "text",
+  "label": "Mailing full address",
+  "group": "p1_mailing_full_address"
+ },
+ {
+  "name": "p1_location_full_address",
+  "page": 1,
+  "type": "text",
+  "label": "Location full address",
+  "group": "p1_location_full_address"
+ },
+ {
+  "name": "p1_home_based_business_no",
+  "page": 1,
+  "type": "checkbox",
+  "label": "Home based business - No",
+  "group": "p1_home_based_business"
+ },
+ {
+  "name": "p1_home_based_business_yes",
+  "page": 1,
+  "type": "checkbox",
+  "label": "Home based business - Yes",
+  "group": "p1_home_based_business"
+ },
+ {
+  "name": "p1_total_of_commercial_locations",
+  "page": 1,
+  "type": "text",
+  "label": "Total # of commercial locations",
+  "group": "p1_total_of_commercial_locations"
+ },
+ {
+  "name": "p1_website_address",
+  "page": 1,
+  "type": "text",
+  "label": "Website address",
+  "group": "p1_website_address"
+ },
+ {
+  "name": "p1_instagram",
+  "page": 1,
+  "type": "text",
+  "label": "Instagram",
+  "group": "p1_instagram"
+ },
+ {
+  "name": "p1_facebook",
+  "page": 1,
+  "type": "text",
+  "label": "Facebook",
+  "group": "p1_facebook"
+ },
+ {
+  "name": "p1_current_auto_insurance_carrier",
+  "page": 1,
+  "type": "text",
+  "label": "Current auto insurance carrier",
+  "group": "p1_current_auto_insurance_carrier"
+ },
+ {
+  "name": "p1_current_auto_policy_expires",
+  "page": 1,
+  "type": "text",
+  "label": "Current auto policy expires",
+  "group": "p1_current_auto_policy_expires"
+ },
+ {
+  "name": "p1_expiring_premium",
+  "page": 1,
+  "type": "text",
+  "label": "Expiring premium",
+  "group": "p1_expiring_premium"
+ },
+ {
+  "name": "p1_years_with_auto_insurance",
+  "page": 1,
+  "type": "text",
+  "label": "Years with auto insurance",
+  "group": "p1_years_with_auto_insurance"
+ },
+ {
+  "name": "p1_new_venture_no",
+  "page": 1,
+  "type": "checkbox",
+  "label": "New venture - No",
+  "group": "p1_new_venture"
+ },
+ {
+  "name": "p1_new_venture_yes",
+  "page": 1,
+  "type": "checkbox",
+  "label": "New venture - Yes",
+  "group": "p1_new_venture"
+ },
+ {
+  "name": "p1_current_workers_comp_carrier",
+  "page": 1,
+  "type": "text",
+  "label": "Current workers comp carrier",
+  "group": "p1_current_workers_comp_carrier"
+ },
+ {
+  "name": "p1_current_wc_policy_expires",
+  "page": 1,
+  "type": "text",
+  "label": "Current WC policy expires",
+  "group": "p1_current_wc_policy_expires"
+ },
+ {
+  "name": "p1_vehicle_dash_cameras_no",
+  "page": 1,
+  "type": "checkbox",
+  "label": "Vehicle dash cameras - No dash cameras installed",
+  "group": "p1_vehicle_dash_cameras"
+ },
+ {
+  "name": "p1_vehicle_dash_cameras_yes",
+  "page": 1,
+  "type": "checkbox",
+  "label": "Vehicle dash cameras - Yes the brand name is:",
+  "group": "p1_vehicle_dash_cameras"
+ },
+ {
+  "name": "p1_vehicle_dash_cameras_brand",
+  "page": 1,
+  "type": "text",
+  "label": "Vehicle dash cameras - Yes the brand name is: value",
+  "group": "p1_vehicle_dash_cameras"
+ },
+ {
+  "name": "p1_vehicle_telematics_no",
+  "page": 1,
+  "type": "checkbox",
+  "label": "Vehicle telematics - No telematics installed",
+  "group": "p1_vehicle_telematics"
+ },
+ {
+  "name": "p1_vehicle_telematics_yes",
+  "page": 1,
+  "type": "checkbox",
+  "label": "Vehicle telematics - Yes the brand name is:",
+  "group": "p1_vehicle_telematics"
+ },
+ {
+  "name": "p1_vehicle_telematics_brand",
+  "page": 1,
+  "type": "text",
+  "label": "Vehicle telematics - Yes the brand name is: value",
+  "group": "p1_vehicle_telematics"
+ },
+ {
+  "name": "p1_how_did_you_find_sierra",
+  "page": 1,
+  "type": "text",
+  "label": "How did you find Sierra",
+  "group": "p1_how_did_you_find_sierra"
+ },
+ {
+  "name": "sp_policy_code",
+  "page": 1,
+  "type": "text",
+  "label": "SP policy code",
+  "group": "sp_policy_code"
+ },
+ {
+  "name": "p1_source_code",
+  "page": 1,
+  "type": "text",
+  "label": "Source code",
+  "group": "p1_source_code"
+ },
+ {
+  "name": "p2_auto_liability_limit_none",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Auto liability limit - No coverage requested",
+  "group": "p2_auto_liability_limit"
+ },
+ {
+  "name": "p2_auto_liability_limit_1m",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Auto liability limit - $1,000,000",
+  "group": "p2_auto_liability_limit"
+ },
+ {
+  "name": "p2_auto_liability_limit_750k",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Auto liability limit - $750,000",
+  "group": "p2_auto_liability_limit"
+ },
+ {
+  "name": "p2_auto_liability_limit_500k",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Auto liability limit - $500,000",
+  "group": "p2_auto_liability_limit"
+ },
+ {
+  "name": "p2_auto_liability_limit_other",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Auto liability limit - $:",
+  "group": "p2_auto_liability_limit"
+ },
+ {
+  "name": "p2_auto_liability_limit_other_amt",
+  "page": 2,
+  "type": "text",
+  "label": "Auto liability limit - $: value",
+  "group": "p2_auto_liability_limit"
+ },
+ {
+  "name": "p2_total_stated_value_of_all_vehicles_none",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Total stated value of all vehicles - No coverage requested",
+  "group": "p2_total_stated_value_of_all_vehicles"
+ },
+ {
+  "name": "p2_total_stated_value_of_all_vehicles_other",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Total stated value of all vehicles - $:",
+  "group": "p2_total_stated_value_of_all_vehicles"
+ },
+ {
+  "name": "p2_total_stated_value_of_all_vehicles_other_amt",
+  "page": 2,
+  "type": "text",
+  "label": "Total stated value of all vehicles - $: value",
+  "group": "p2_total_stated_value_of_all_vehicles"
+ },
+ {
+  "name": "p2_on_hook_or_in_tow_or_cargo_limit_none",
+  "page": 2,
+  "type": "checkbox",
+  "label": "On-Hook or In-tow or cargo limit - No coverage requested",
+  "group": "p2_on_hook_or_in_tow_or_cargo_limit"
+ },
+ {
+  "name": "p2_on_hook_or_in_tow_or_cargo_limit_100k",
+  "page": 2,
+  "type": "checkbox",
+  "label": "On-Hook or In-tow or cargo limit - $100,000",
+  "group": "p2_on_hook_or_in_tow_or_cargo_limit"
+ },
+ {
+  "name": "p2_on_hook_or_in_tow_or_cargo_limit_50k",
+  "page": 2,
+  "type": "checkbox",
+  "label": "On-Hook or In-tow or cargo limit - $50,000",
+  "group": "p2_on_hook_or_in_tow_or_cargo_limit"
+ },
+ {
+  "name": "p2_on_hook_or_in_tow_or_cargo_limit_25k",
+  "page": 2,
+  "type": "checkbox",
+  "label": "On-Hook or In-tow or cargo limit - $25,000",
+  "group": "p2_on_hook_or_in_tow_or_cargo_limit"
+ },
+ {
+  "name": "p2_on_hook_or_in_tow_or_cargo_limit_other",
+  "page": 2,
+  "type": "checkbox",
+  "label": "On-Hook or In-tow or cargo limit - $:",
+  "group": "p2_on_hook_or_in_tow_or_cargo_limit"
+ },
+ {
+  "name": "p2_on_hook_or_in_tow_or_cargo_limit_other_amt",
+  "page": 2,
+  "type": "text",
+  "label": "On-Hook or In-tow or cargo limit - $: value",
+  "group": "p2_on_hook_or_in_tow_or_cargo_limit"
+ },
+ {
+  "name": "p2_general_or_garage_liability_none",
+  "page": 2,
+  "type": "checkbox",
+  "label": "General or garage liability - No coverage requested",
+  "group": "p2_general_or_garage_liability"
+ },
+ {
+  "name": "p2_general_or_garage_liability_1m",
+  "page": 2,
+  "type": "checkbox",
+  "label": "General or garage liability - $1,000,000 each occurrence",
+  "group": "p2_general_or_garage_liability"
+ },
+ {
+  "name": "p2_general_or_garage_liability_other",
+  "page": 2,
+  "type": "checkbox",
+  "label": "General or garage liability - $:",
+  "group": "p2_general_or_garage_liability"
+ },
+ {
+  "name": "p2_general_or_garage_liability_other_amt",
+  "page": 2,
+  "type": "text",
+  "label": "General or garage liability - $: value",
+  "group": "p2_general_or_garage_liability"
+ },
+ {
+  "name": "p2_garage_keepers_legal_liability_none",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Garage keepers legal liability - No coverage requested",
+  "group": "p2_garage_keepers_legal_liability"
+ },
+ {
+  "name": "p2_garage_keepers_legal_liability_150k",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Garage keepers legal liability - $150,000",
+  "group": "p2_garage_keepers_legal_liability"
+ },
+ {
+  "name": "p2_garage_keepers_legal_liability_100k",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Garage keepers legal liability - $100,000",
+  "group": "p2_garage_keepers_legal_liability"
+ },
+ {
+  "name": "p2_garage_keepers_legal_liability_other",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Garage keepers legal liability - $:",
+  "group": "p2_garage_keepers_legal_liability"
+ },
+ {
+  "name": "p2_garage_keepers_legal_liability_other_amt",
+  "page": 2,
+  "type": "text",
+  "label": "Garage keepers legal liability - $: value",
+  "group": "p2_garage_keepers_legal_liability"
+ },
+ {
+  "name": "p2_building_property_stated_value_none",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Building property stated value - No coverage requested",
+  "group": "p2_building_property_stated_value"
+ },
+ {
+  "name": "p2_building_property_stated_value_other",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Building property stated value - $:",
+  "group": "p2_building_property_stated_value"
+ },
+ {
+  "name": "p2_building_property_stated_value_other_amt",
+  "page": 2,
+  "type": "text",
+  "label": "Building property stated value - $: value",
+  "group": "p2_building_property_stated_value"
+ },
+ {
+  "name": "p2_business_personal_property_value_none",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Business personal property value - No coverage requested",
+  "group": "p2_business_personal_property_value"
+ },
+ {
+  "name": "p2_business_personal_property_value_other",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Business personal property value - $:",
+  "group": "p2_business_personal_property_value"
+ },
+ {
+  "name": "p2_business_personal_property_value_other_amt",
+  "page": 2,
+  "type": "text",
+  "label": "Business personal property value - $: value",
+  "group": "p2_business_personal_property_value"
+ },
+ {
+  "name": "p2_inland_marine_total_stated_value_none",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Inland marine total stated value - No coverage requested",
+  "group": "p2_inland_marine_total_stated_value"
+ },
+ {
+  "name": "p2_inland_marine_total_stated_value_other",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Inland marine total stated value - $:",
+  "group": "p2_inland_marine_total_stated_value"
+ },
+ {
+  "name": "p2_inland_marine_total_stated_value_other_amt",
+  "page": 2,
+  "type": "text",
+  "label": "Inland marine total stated value - $: value",
+  "group": "p2_inland_marine_total_stated_value"
+ },
+ {
+  "name": "p2_umbrella_coverage_limit_none",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Umbrella coverage limit - No coverage requested",
+  "group": "p2_umbrella_coverage_limit"
+ },
+ {
+  "name": "p2_umbrella_coverage_limit_other",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Umbrella coverage limit - $:",
+  "group": "p2_umbrella_coverage_limit"
+ },
+ {
+  "name": "p2_umbrella_coverage_limit_other_amt",
+  "page": 2,
+  "type": "text",
+  "label": "Umbrella coverage limit - $: value",
+  "group": "p2_umbrella_coverage_limit"
+ },
+ {
+  "name": "p2_workers_compensation_none",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Workers compensation - No coverage requested",
+  "group": "p2_workers_compensation"
+ },
+ {
+  "name": "p2_workers_compensation_no_policy",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Workers compensation - No policy in force",
+  "group": "p2_workers_compensation"
+ },
+ {
+  "name": "p2_workers_compensation_expires_chk",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Workers compensation - Expires:",
+  "group": "p2_workers_compensation"
+ },
+ {
+  "name": "p2_workers_compensation_expires",
+  "page": 2,
+  "type": "text",
+  "label": "Workers compensation - Expires: value",
+  "group": "p2_workers_compensation"
+ },
+ {
+  "name": "p2_other_coverages_requested",
+  "page": 2,
+  "type": "multiline",
+  "label": "Other coverages requested",
+  "group": "p2_other_coverages_requested"
+ },
+ {
+  "name": "p2_private_party_incoming_calls_no",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Private party incoming calls - No",
+  "group": "p2_private_party_incoming_calls"
+ },
+ {
+  "name": "p2_private_party_incoming_calls_yes",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Private party incoming calls - Yes %:",
+  "group": "p2_private_party_incoming_calls"
+ },
+ {
+  "name": "p2_private_party_incoming_calls_pct",
+  "page": 2,
+  "type": "text",
+  "label": "Private party incoming calls - Yes %: value",
+  "group": "p2_private_party_incoming_calls"
+ },
+ {
+  "name": "p2_motor_clubs_no",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Motor clubs - No",
+  "group": "p2_motor_clubs"
+ },
+ {
+  "name": "p2_motor_clubs_yes",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Motor clubs - Yes %:",
+  "group": "p2_motor_clubs"
+ },
+ {
+  "name": "p2_motor_clubs_pct",
+  "page": 2,
+  "type": "text",
+  "label": "Motor clubs - Yes %: value",
+  "group": "p2_motor_clubs"
+ },
+ {
+  "name": "p2_dealers_to_from_auctions_no",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Dealers to/from auctions - No",
+  "group": "p2_dealers_to_from_auctions"
+ },
+ {
+  "name": "p2_dealers_to_from_auctions_yes",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Dealers to/from auctions - Yes %:",
+  "group": "p2_dealers_to_from_auctions"
+ },
+ {
+  "name": "p2_dealers_to_from_auctions_pct",
+  "page": 2,
+  "type": "text",
+  "label": "Dealers to/from auctions - Yes %: value",
+  "group": "p2_dealers_to_from_auctions"
+ },
+ {
+  "name": "p2_salvage_hauling_no",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Salvage hauling - No",
+  "group": "p2_salvage_hauling"
+ },
+ {
+  "name": "p2_salvage_hauling_yes",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Salvage hauling - Yes %:",
+  "group": "p2_salvage_hauling"
+ },
+ {
+  "name": "p2_salvage_hauling_pct",
+  "page": 2,
+  "type": "text",
+  "label": "Salvage hauling - Yes %: value",
+  "group": "p2_salvage_hauling"
+ },
+ {
+  "name": "p2_police_rotations_no",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Police rotations - No",
+  "group": "p2_police_rotations"
+ },
+ {
+  "name": "p2_police_rotations_yes",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Police rotations - Yes %:",
+  "group": "p2_police_rotations"
+ },
+ {
+  "name": "p2_police_rotations_pct",
+  "page": 2,
+  "type": "text",
+  "label": "Police rotations - Yes %: value",
+  "group": "p2_police_rotations"
+ },
+ {
+  "name": "p2_impounds_no",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Impounds - No",
+  "group": "p2_impounds"
+ },
+ {
+  "name": "p2_impounds_yes",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Impounds - Yes %:",
+  "group": "p2_impounds"
+ },
+ {
+  "name": "p2_impounds_pct",
+  "page": 2,
+  "type": "text",
+  "label": "Impounds - Yes %: value",
+  "group": "p2_impounds"
+ },
+ {
+  "name": "p2_logistics_companies_no",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Logistics companies - No",
+  "group": "p2_logistics_companies"
+ },
+ {
+  "name": "p2_logistics_companies_yes",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Logistics companies - Yes %:",
+  "group": "p2_logistics_companies"
+ },
+ {
+  "name": "p2_logistics_companies_pct",
+  "page": 2,
+  "type": "text",
+  "label": "Logistics companies - Yes %: value",
+  "group": "p2_logistics_companies"
+ },
+ {
+  "name": "p2_freight_brokers_no",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Freight brokers - No",
+  "group": "p2_freight_brokers"
+ },
+ {
+  "name": "p2_freight_brokers_yes",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Freight brokers - Yes %:",
+  "group": "p2_freight_brokers"
+ },
+ {
+  "name": "p2_freight_brokers_pct",
+  "page": 2,
+  "type": "text",
+  "label": "Freight brokers - Yes %: value",
+  "group": "p2_freight_brokers"
+ },
+ {
+  "name": "p2_other_sources_no",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Other sources - No",
+  "group": "p2_other_sources"
+ },
+ {
+  "name": "p2_other_sources_yes",
+  "page": 2,
+  "type": "checkbox",
+  "label": "Other sources - Yes %:",
+  "group": "p2_other_sources"
+ },
+ {
+  "name": "p2_other_sources_pct",
+  "page": 2,
+  "type": "text",
+  "label": "Other sources - Yes %: value",
+  "group": "p2_other_sources"
+ },
+ {
+  "name": "p2_describe_other_revenue_sources",
+  "page": 2,
+  "type": "multiline",
+  "label": "Describe other revenue sources",
+  "group": "p2_describe_other_revenue_sources"
+ },
+ {
+  "name": "p2_contract1_name",
+  "page": 2,
+  "type": "text",
+  "label": "Contract 1 name",
+  "group": "p2_contract1"
+ },
+ {
+  "name": "p2_contract1_pct",
+  "page": 2,
+  "type": "text",
+  "label": "Contract 1 %",
+  "group": "p2_contract1"
+ },
+ {
+  "name": "p2_contract2_name",
+  "page": 2,
+  "type": "text",
+  "label": "Contract 2 name",
+  "group": "p2_contract2"
+ },
+ {
+  "name": "p2_contract2_pct",
+  "page": 2,
+  "type": "text",
+  "label": "Contract 2 %",
+  "group": "p2_contract2"
+ },
+ {
+  "name": "p2_contract3_name",
+  "page": 2,
+  "type": "text",
+  "label": "Contract 3 name",
+  "group": "p2_contract3"
+ },
+ {
+  "name": "p2_contract3_pct",
+  "page": 2,
+  "type": "text",
+  "label": "Contract 3 %",
+  "group": "p2_contract3"
+ },
+ {
+  "name": "p2_contract4_name",
+  "page": 2,
+  "type": "text",
+  "label": "Contract 4 name",
+  "group": "p2_contract4"
+ },
+ {
+  "name": "p2_contract4_pct",
+  "page": 2,
+  "type": "text",
+  "label": "Contract 4 %",
+  "group": "p2_contract4"
+ },
+ {
+  "name": "p3_tow_disabled_autos_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Tow disabled autos - No",
+  "group": "p3_tow_disabled_autos"
+ },
+ {
+  "name": "p3_tow_disabled_autos_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Tow disabled autos - Yes %:",
+  "group": "p3_tow_disabled_autos"
+ },
+ {
+  "name": "p3_tow_disabled_autos_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Tow disabled autos - Yes %: value",
+  "group": "p3_tow_disabled_autos"
+ },
+ {
+  "name": "p3_roadside_assistance_work_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Roadside assistance work - No",
+  "group": "p3_roadside_assistance_work"
+ },
+ {
+  "name": "p3_roadside_assistance_work_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Roadside assistance work - Yes %:",
+  "group": "p3_roadside_assistance_work"
+ },
+ {
+  "name": "p3_roadside_assistance_work_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Roadside assistance work - Yes %: value",
+  "group": "p3_roadside_assistance_work"
+ },
+ {
+  "name": "p3_private_property_impounds_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Private property impounds - No",
+  "group": "p3_private_property_impounds"
+ },
+ {
+  "name": "p3_private_property_impounds_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Private property impounds - Yes %:",
+  "group": "p3_private_property_impounds"
+ },
+ {
+  "name": "p3_private_property_impounds_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Private property impounds - Yes %: value",
+  "group": "p3_private_property_impounds"
+ },
+ {
+  "name": "p3_lien_sales_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Lien sales - No",
+  "group": "p3_lien_sales"
+ },
+ {
+  "name": "p3_lien_sales_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Lien sales - Yes %:",
+  "group": "p3_lien_sales"
+ },
+ {
+  "name": "p3_lien_sales_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Lien sales - Yes %: value",
+  "group": "p3_lien_sales"
+ },
+ {
+  "name": "p3_police_impounds_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Police impounds - No",
+  "group": "p3_police_impounds"
+ },
+ {
+  "name": "p3_police_impounds_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Police impounds - Yes %:",
+  "group": "p3_police_impounds"
+ },
+ {
+  "name": "p3_police_impounds_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Police impounds - Yes %: value",
+  "group": "p3_police_impounds"
+ },
+ {
+  "name": "p3_accident_recovery_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Accident recovery - No",
+  "group": "p3_accident_recovery"
+ },
+ {
+  "name": "p3_accident_recovery_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Accident recovery - Yes %:",
+  "group": "p3_accident_recovery"
+ },
+ {
+  "name": "p3_accident_recovery_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Accident recovery - Yes %: value",
+  "group": "p3_accident_recovery"
+ },
+ {
+  "name": "p3_used_auto_hauling_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Used auto hauling - No",
+  "group": "p3_used_auto_hauling"
+ },
+ {
+  "name": "p3_used_auto_hauling_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Used auto hauling - Yes %:",
+  "group": "p3_used_auto_hauling"
+ },
+ {
+  "name": "p3_used_auto_hauling_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Used auto hauling - Yes %: value",
+  "group": "p3_used_auto_hauling"
+ },
+ {
+  "name": "p3_salvage_auto_hauling_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Salvage auto hauling - No",
+  "group": "p3_salvage_auto_hauling"
+ },
+ {
+  "name": "p3_salvage_auto_hauling_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Salvage auto hauling - Yes %:",
+  "group": "p3_salvage_auto_hauling"
+ },
+ {
+  "name": "p3_salvage_auto_hauling_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Salvage auto hauling - Yes %: value",
+  "group": "p3_salvage_auto_hauling"
+ },
+ {
+  "name": "p3_new_auto_hauling_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "New auto hauling - No",
+  "group": "p3_new_auto_hauling"
+ },
+ {
+  "name": "p3_new_auto_hauling_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "New auto hauling - Yes %:",
+  "group": "p3_new_auto_hauling"
+ },
+ {
+  "name": "p3_new_auto_hauling_pct",
+  "page": 3,
+  "type": "text",
+  "label": "New auto hauling - Yes %: value",
+  "group": "p3_new_auto_hauling"
+ },
+ {
+  "name": "p3_hazmat_hauling_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Hazmat hauling - No",
+  "group": "p3_hazmat_hauling"
+ },
+ {
+  "name": "p3_hazmat_hauling_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Hazmat hauling - Yes %:",
+  "group": "p3_hazmat_hauling"
+ },
+ {
+  "name": "p3_hazmat_hauling_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Hazmat hauling - Yes %: value",
+  "group": "p3_hazmat_hauling"
+ },
+ {
+  "name": "p3_towing_not_for_hire_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Towing not for hire - No",
+  "group": "p3_towing_not_for_hire"
+ },
+ {
+  "name": "p3_towing_not_for_hire_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Towing not for hire - Yes %:",
+  "group": "p3_towing_not_for_hire"
+ },
+ {
+  "name": "p3_towing_not_for_hire_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Towing not for hire - Yes %: value",
+  "group": "p3_towing_not_for_hire"
+ },
+ {
+  "name": "p3_any_repo_work_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Any repo work - No",
+  "group": "p3_any_repo_work"
+ },
+ {
+  "name": "p3_any_repo_work_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Any repo work - Yes %:",
+  "group": "p3_any_repo_work"
+ },
+ {
+  "name": "p3_any_repo_work_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Any repo work - Yes %: value",
+  "group": "p3_any_repo_work"
+ },
+ {
+  "name": "p3_garage_operations_work_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Garage operations work - No",
+  "group": "p3_garage_operations_work"
+ },
+ {
+  "name": "p3_garage_operations_work_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Garage operations work - Yes %:",
+  "group": "p3_garage_operations_work"
+ },
+ {
+  "name": "p3_garage_operations_work_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Garage operations work - Yes %: value",
+  "group": "p3_garage_operations_work"
+ },
+ {
+  "name": "p3_mobile_auto_repair_work_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Mobile auto repair work - No",
+  "group": "p3_mobile_auto_repair_work"
+ },
+ {
+  "name": "p3_mobile_auto_repair_work_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Mobile auto repair work - Yes %:",
+  "group": "p3_mobile_auto_repair_work"
+ },
+ {
+  "name": "p3_mobile_auto_repair_work_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Mobile auto repair work - Yes %: value",
+  "group": "p3_mobile_auto_repair_work"
+ },
+ {
+  "name": "p3_general_freight_hauling_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "General freight hauling - No",
+  "group": "p3_general_freight_hauling"
+ },
+ {
+  "name": "p3_general_freight_hauling_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "General freight hauling - Yes %:",
+  "group": "p3_general_freight_hauling"
+ },
+ {
+  "name": "p3_general_freight_hauling_pct",
+  "page": 3,
+  "type": "text",
+  "label": "General freight hauling - Yes %: value",
+  "group": "p3_general_freight_hauling"
+ },
+ {
+  "name": "p3_contractor_operations_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Contractor operations - No",
+  "group": "p3_contractor_operations"
+ },
+ {
+  "name": "p3_contractor_operations_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Contractor operations - Yes %:",
+  "group": "p3_contractor_operations"
+ },
+ {
+  "name": "p3_contractor_operations_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Contractor operations - Yes %: value",
+  "group": "p3_contractor_operations"
+ },
+ {
+  "name": "p3_refrigerated_produce_hauling_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Refrigerated produce hauling - No",
+  "group": "p3_refrigerated_produce_hauling"
+ },
+ {
+  "name": "p3_refrigerated_produce_hauling_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Refrigerated produce hauling - Yes %:",
+  "group": "p3_refrigerated_produce_hauling"
+ },
+ {
+  "name": "p3_refrigerated_produce_hauling_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Refrigerated produce hauling - Yes %: value",
+  "group": "p3_refrigerated_produce_hauling"
+ },
+ {
+  "name": "p3_non_refer_produce_hauling_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Non-refer produce hauling - No",
+  "group": "p3_non_refer_produce_hauling"
+ },
+ {
+  "name": "p3_non_refer_produce_hauling_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Non-refer produce hauling - Yes %:",
+  "group": "p3_non_refer_produce_hauling"
+ },
+ {
+  "name": "p3_non_refer_produce_hauling_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Non-refer produce hauling - Yes %: value",
+  "group": "p3_non_refer_produce_hauling"
+ },
+ {
+  "name": "p3_other_operations_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Other operations - No",
+  "group": "p3_other_operations"
+ },
+ {
+  "name": "p3_other_operations_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Other operations - Yes %:",
+  "group": "p3_other_operations"
+ },
+ {
+  "name": "p3_other_operations_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Other operations - Yes %: value",
+  "group": "p3_other_operations"
+ },
+ {
+  "name": "p3_describe_other_operations",
+  "page": 3,
+  "type": "multiline",
+  "label": "Describe other operations",
+  "group": "p3_describe_other_operations"
+ },
+ {
+  "name": "p3_private_passenger_vehicles_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Private passenger vehicles - No",
+  "group": "p3_private_passenger_vehicles"
+ },
+ {
+  "name": "p3_private_passenger_vehicles_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Private passenger vehicles - Yes %:",
+  "group": "p3_private_passenger_vehicles"
+ },
+ {
+  "name": "p3_private_passenger_vehicles_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Private passenger vehicles - Yes %: value",
+  "group": "p3_private_passenger_vehicles"
+ },
+ {
+  "name": "p3_trucks_10k_gvw_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Trucks 10k+ GVW - No",
+  "group": "p3_trucks_10k_gvw"
+ },
+ {
+  "name": "p3_trucks_10k_gvw_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Trucks 10k+ GVW - Yes %:",
+  "group": "p3_trucks_10k_gvw"
+ },
+ {
+  "name": "p3_trucks_10k_gvw_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Trucks 10k+ GVW - Yes %: value",
+  "group": "p3_trucks_10k_gvw"
+ },
+ {
+  "name": "p3_motorcycles_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Motorcycles - No",
+  "group": "p3_motorcycles"
+ },
+ {
+  "name": "p3_motorcycles_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Motorcycles - Yes %:",
+  "group": "p3_motorcycles"
+ },
+ {
+  "name": "p3_motorcycles_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Motorcycles - Yes %: value",
+  "group": "p3_motorcycles"
+ },
+ {
+  "name": "p3_watercrafts_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Watercrafts - No",
+  "group": "p3_watercrafts"
+ },
+ {
+  "name": "p3_watercrafts_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Watercrafts - Yes %:",
+  "group": "p3_watercrafts"
+ },
+ {
+  "name": "p3_watercrafts_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Watercrafts - Yes %: value",
+  "group": "p3_watercrafts"
+ },
+ {
+  "name": "p3_refrigerated_produce_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Refrigerated produce - No",
+  "group": "p3_refrigerated_produce"
+ },
+ {
+  "name": "p3_refrigerated_produce_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Refrigerated produce - Yes %:",
+  "group": "p3_refrigerated_produce"
+ },
+ {
+  "name": "p3_refrigerated_produce_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Refrigerated produce - Yes %: value",
+  "group": "p3_refrigerated_produce"
+ },
+ {
+  "name": "p3_non_refrigerated_produce_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Non-refrigerated produce - No",
+  "group": "p3_non_refrigerated_produce"
+ },
+ {
+  "name": "p3_non_refrigerated_produce_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Non-refrigerated produce - Yes %:",
+  "group": "p3_non_refrigerated_produce"
+ },
+ {
+  "name": "p3_non_refrigerated_produce_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Non-refrigerated produce - Yes %: value",
+  "group": "p3_non_refrigerated_produce"
+ },
+ {
+  "name": "p3_general_dry_goods_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "General dry goods - No",
+  "group": "p3_general_dry_goods"
+ },
+ {
+  "name": "p3_general_dry_goods_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "General dry goods - Yes %:",
+  "group": "p3_general_dry_goods"
+ },
+ {
+  "name": "p3_general_dry_goods_pct",
+  "page": 3,
+  "type": "text",
+  "label": "General dry goods - Yes %: value",
+  "group": "p3_general_dry_goods"
+ },
+ {
+  "name": "p3_hazmat_goods_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Hazmat goods - No",
+  "group": "p3_hazmat_goods"
+ },
+ {
+  "name": "p3_hazmat_goods_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Hazmat goods - Yes %:",
+  "group": "p3_hazmat_goods"
+ },
+ {
+  "name": "p3_hazmat_goods_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Hazmat goods - Yes %: value",
+  "group": "p3_hazmat_goods"
+ },
+ {
+  "name": "p3_other_goods_hauled_no",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Other goods hauled - No",
+  "group": "p3_other_goods_hauled"
+ },
+ {
+  "name": "p3_other_goods_hauled_yes",
+  "page": 3,
+  "type": "checkbox",
+  "label": "Other goods hauled - Yes %:",
+  "group": "p3_other_goods_hauled"
+ },
+ {
+  "name": "p3_other_goods_hauled_pct",
+  "page": 3,
+  "type": "text",
+  "label": "Other goods hauled - Yes %: value",
+  "group": "p3_other_goods_hauled"
+ },
+ {
+  "name": "p3_describe_other_good_hauled",
+  "page": 3,
+  "type": "multiline",
+  "label": "Describe other good hauled",
+  "group": "p3_describe_other_good_hauled"
+ },
+ {
+  "name": "p4_1_year_estimated_gross_revenue",
+  "page": 4,
+  "type": "text",
+  "label": "1 year estimated gross revenue",
+  "group": "p4_1_year_estimated_gross_revenue"
+ },
+ {
+  "name": "p4_allow_passengers_during_tow_no",
+  "page": 4,
+  "type": "checkbox",
+  "label": "Allow passengers during tow - No",
+  "group": "p4_allow_passengers_during_tow"
+ },
+ {
+  "name": "p4_allow_passengers_during_tow_yes",
+  "page": 4,
+  "type": "checkbox",
+  "label": "Allow passengers during tow - Yes %:",
+  "group": "p4_allow_passengers_during_tow"
+ },
+ {
+  "name": "p4_allow_passengers_during_tow_pct",
+  "page": 4,
+  "type": "text",
+  "label": "Allow passengers during tow - Yes %: value",
+  "group": "p4_allow_passengers_during_tow"
+ },
+ {
+  "name": "p4_transportation_plates_no",
+  "page": 4,
+  "type": "checkbox",
+  "label": "Transportation plates - No",
+  "group": "p4_transportation_plates"
+ },
+ {
+  "name": "p4_transportation_plates_yes",
+  "page": 4,
+  "type": "checkbox",
+  "label": "Transportation plates - Yes #:",
+  "group": "p4_transportation_plates"
+ },
+ {
+  "name": "p4_transportation_plates_num",
+  "page": 4,
+  "type": "text",
+  "label": "Transportation plates - Yes #: value",
+  "group": "p4_transportation_plates"
+ },
+ {
+  "name": "p4_repossessed_plates_no",
+  "page": 4,
+  "type": "checkbox",
+  "label": "Repossessed plates - No",
+  "group": "p4_repossessed_plates"
+ },
+ {
+  "name": "p4_repossessed_plates_yes",
+  "page": 4,
+  "type": "checkbox",
+  "label": "Repossessed plates - Yes #:",
+  "group": "p4_repossessed_plates"
+ },
+ {
+  "name": "p4_repossessed_plates_num",
+  "page": 4,
+  "type": "text",
+  "label": "Repossessed plates - Yes #: value",
+  "group": "p4_repossessed_plates"
+ },
+ {
+  "name": "p4_hours_of_operations_lt12",
+  "page": 4,
+  "type": "checkbox",
+  "label": "Hours of operations - <12",
+  "group": "p4_hours_of_operations"
+ },
+ {
+  "name": "p4_hours_of_operations_h12plus",
+  "page": 4,
+  "type": "checkbox",
+  "label": "Hours of operations - 12+ hours a day",
+  "group": "p4_hours_of_operations"
+ },
+ {
+  "name": "p4_hazardous_cargo_ever_hauled_no",
+  "page": 4,
+  "type": "checkbox",
+  "label": "Hazardous cargo ever hauled - No",
+  "group": "p4_hazardous_cargo_ever_hauled"
+ },
+ {
+  "name": "p4_hazardous_cargo_ever_hauled_yes",
+  "page": 4,
+  "type": "checkbox",
+  "label": "Hazardous cargo ever hauled - Yes",
+  "group": "p4_hazardous_cargo_ever_hauled"
+ },
+ {
+  "name": "p4_safety_chains_always_used_no",
+  "page": 4,
+  "type": "checkbox",
+  "label": "Safety chains always used - No",
+  "group": "p4_safety_chains_always_used"
+ },
+ {
+  "name": "p4_safety_chains_always_used_yes",
+  "page": 4,
+  "type": "checkbox",
+  "label": "Safety chains always used - Yes",
+  "group": "p4_safety_chains_always_used"
+ },
+ {
+  "name": "p4_written_vehicle_maintenance_no",
+  "page": 4,
+  "type": "checkbox",
+  "label": "Written vehicle maintenance - No",
+  "group": "p4_written_vehicle_maintenance"
+ },
+ {
+  "name": "p4_written_vehicle_maintenance_yes",
+  "page": 4,
+  "type": "checkbox",
+  "label": "Written vehicle maintenance - Yes",
+  "group": "p4_written_vehicle_maintenance"
+ },
+ {
+  "name": "p4_written_safety_program_no",
+  "page": 4,
+  "type": "checkbox",
+  "label": "Written safety program - No",
+  "group": "p4_written_safety_program"
+ },
+ {
+  "name": "p4_written_safety_program_yes",
+  "page": 4,
+  "type": "checkbox",
+  "label": "Written safety program - Yes",
+  "group": "p4_written_safety_program"
+ },
+ {
+  "name": "p4_q4_10_no",
+  "page": 4,
+  "type": "checkbox",
+  "label": "Written safety program - No",
+  "group": "p4_q4_10"
+ },
+ {
+  "name": "p4_q4_10_yes",
+  "page": 4,
+  "type": "checkbox",
+  "label": "Written safety program - Yes",
+  "group": "p4_q4_10"
+ },
+ {
+  "name": "p4_50_miles_no",
+  "page": 4,
+  "type": "checkbox",
+  "label": "< 50 miles - No",
+  "group": "p4_50_miles"
+ },
+ {
+  "name": "p4_50_miles_yes",
+  "page": 4,
+  "type": "checkbox",
+  "label": "< 50 miles - Yes %:",
+  "group": "p4_50_miles"
+ },
+ {
+  "name": "p4_50_miles_pct",
+  "page": 4,
+  "type": "text",
+  "label": "< 50 miles - Yes %: value",
+  "group": "p4_50_miles"
+ },
+ {
+  "name": "p4_51_300_miles_no",
+  "page": 4,
+  "type": "checkbox",
+  "label": "51 -  300 miles - No",
+  "group": "p4_51_300_miles"
+ },
+ {
+  "name": "p4_51_300_miles_yes",
+  "page": 4,
+  "type": "checkbox",
+  "label": "51 -  300 miles - Yes %:",
+  "group": "p4_51_300_miles"
+ },
+ {
+  "name": "p4_51_300_miles_pct",
+  "page": 4,
+  "type": "text",
+  "label": "51 -  300 miles - Yes %: value",
+  "group": "p4_51_300_miles"
+ },
+ {
+  "name": "p4_301_500_miles_no",
+  "page": 4,
+  "type": "checkbox",
+  "label": "301 - 500 miles - No",
+  "group": "p4_301_500_miles"
+ },
+ {
+  "name": "p4_301_500_miles_yes",
+  "page": 4,
+  "type": "checkbox",
+  "label": "301 - 500 miles - Yes %:",
+  "group": "p4_301_500_miles"
+ },
+ {
+  "name": "p4_301_500_miles_pct",
+  "page": 4,
+  "type": "text",
+  "label": "301 - 500 miles - Yes %: value",
+  "group": "p4_301_500_miles"
+ },
+ {
+  "name": "p4_501_1_000_miles_no",
+  "page": 4,
+  "type": "checkbox",
+  "label": "501 - 1,000 miles - No",
+  "group": "p4_501_1_000_miles"
+ },
+ {
+  "name": "p4_501_1_000_miles_yes",
+  "page": 4,
+  "type": "checkbox",
+  "label": "501 - 1,000 miles - Yes %:",
+  "group": "p4_501_1_000_miles"
+ },
+ {
+  "name": "p4_501_1_000_miles_pct",
+  "page": 4,
+  "type": "text",
+  "label": "501 - 1,000 miles - Yes %: value",
+  "group": "p4_501_1_000_miles"
+ },
+ {
+  "name": "p4_1_000_2_500_miles_no",
+  "page": 4,
+  "type": "checkbox",
+  "label": "1,000 - 2,500 miles - No",
+  "group": "p4_1_000_2_500_miles"
+ },
+ {
+  "name": "p4_1_000_2_500_miles_yes",
+  "page": 4,
+  "type": "checkbox",
+  "label": "1,000 - 2,500 miles - Yes %:",
+  "group": "p4_1_000_2_500_miles"
+ },
+ {
+  "name": "p4_1_000_2_500_miles_pct",
+  "page": 4,
+  "type": "text",
+  "label": "1,000 - 2,500 miles - Yes %: value",
+  "group": "p4_1_000_2_500_miles"
+ },
+ {
+  "name": "p4_2_501_5_000_miles_no",
+  "page": 4,
+  "type": "checkbox",
+  "label": "2,501 - 5,000 miles - No",
+  "group": "p4_2_501_5_000_miles"
+ },
+ {
+  "name": "p4_2_501_5_000_miles_yes",
+  "page": 4,
+  "type": "checkbox",
+  "label": "2,501 - 5,000 miles - Yes %:",
+  "group": "p4_2_501_5_000_miles"
+ },
+ {
+  "name": "p4_2_501_5_000_miles_pct",
+  "page": 4,
+  "type": "text",
+  "label": "2,501 - 5,000 miles - Yes %: value",
+  "group": "p4_2_501_5_000_miles"
+ },
+ {
+  "name": "p4_5_000_miles_no",
+  "page": 4,
+  "type": "checkbox",
+  "label": "5,000+ miles - No",
+  "group": "p4_5_000_miles"
+ },
+ {
+  "name": "p4_5_000_miles_yes",
+  "page": 4,
+  "type": "checkbox",
+  "label": "5,000+ miles - Yes %:",
+  "group": "p4_5_000_miles"
+ },
+ {
+  "name": "p4_5_000_miles_pct",
+  "page": 4,
+  "type": "text",
+  "label": "5,000+ miles - Yes %: value",
+  "group": "p4_5_000_miles"
+ },
+ {
+  "name": "p4_overall_description_of_company_operations",
+  "page": 4,
+  "type": "multiline",
+  "label": "Overall description of company operations",
+  "group": "p4_overall_description_of_company_operations"
+ },
+ {
+  "name": "veh_total_value",
+  "page": 5,
+  "type": "text",
+  "label": "Total stated value of all vehicles",
+  "group": "veh_total_value"
+ },
+ {
+  "name": "veh_total_power",
+  "page": 5,
+  "type": "text",
+  "label": "Total number of power units (= fleet)",
+  "group": "veh_total_power"
+ },
+ {
+  "name": "veh_total_trailers",
+  "page": 5,
+  "type": "text",
+  "label": "Total number of trailers",
+  "group": "veh_total_trailers"
+ },
+ {
+  "name": "p5_veh01_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 1 description",
+  "group": "p5_veh01"
+ },
+ {
+  "name": "p5_veh01_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 1 stated value + VIN",
+  "group": "p5_veh01"
+ },
+ {
+  "name": "p5_veh02_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 2 description",
+  "group": "p5_veh02"
+ },
+ {
+  "name": "p5_veh02_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 2 stated value + VIN",
+  "group": "p5_veh02"
+ },
+ {
+  "name": "p5_veh03_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 3 description",
+  "group": "p5_veh03"
+ },
+ {
+  "name": "p5_veh03_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 3 stated value + VIN",
+  "group": "p5_veh03"
+ },
+ {
+  "name": "p5_veh04_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 4 description",
+  "group": "p5_veh04"
+ },
+ {
+  "name": "p5_veh04_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 4 stated value + VIN",
+  "group": "p5_veh04"
+ },
+ {
+  "name": "p5_veh05_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 5 description",
+  "group": "p5_veh05"
+ },
+ {
+  "name": "p5_veh05_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 5 stated value + VIN",
+  "group": "p5_veh05"
+ },
+ {
+  "name": "p5_veh06_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 6 description",
+  "group": "p5_veh06"
+ },
+ {
+  "name": "p5_veh06_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 6 stated value + VIN",
+  "group": "p5_veh06"
+ },
+ {
+  "name": "p5_veh07_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 7 description",
+  "group": "p5_veh07"
+ },
+ {
+  "name": "p5_veh07_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 7 stated value + VIN",
+  "group": "p5_veh07"
+ },
+ {
+  "name": "p5_veh08_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 8 description",
+  "group": "p5_veh08"
+ },
+ {
+  "name": "p5_veh08_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 8 stated value + VIN",
+  "group": "p5_veh08"
+ },
+ {
+  "name": "p5_veh09_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 9 description",
+  "group": "p5_veh09"
+ },
+ {
+  "name": "p5_veh09_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 9 stated value + VIN",
+  "group": "p5_veh09"
+ },
+ {
+  "name": "p5_veh10_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 10 description",
+  "group": "p5_veh10"
+ },
+ {
+  "name": "p5_veh10_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 10 stated value + VIN",
+  "group": "p5_veh10"
+ },
+ {
+  "name": "p5_veh11_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 11 description",
+  "group": "p5_veh11"
+ },
+ {
+  "name": "p5_veh11_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 11 stated value + VIN",
+  "group": "p5_veh11"
+ },
+ {
+  "name": "p5_veh12_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 12 description",
+  "group": "p5_veh12"
+ },
+ {
+  "name": "p5_veh12_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 12 stated value + VIN",
+  "group": "p5_veh12"
+ },
+ {
+  "name": "p5_veh13_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 13 description",
+  "group": "p5_veh13"
+ },
+ {
+  "name": "p5_veh13_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 13 stated value + VIN",
+  "group": "p5_veh13"
+ },
+ {
+  "name": "p5_veh14_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 14 description",
+  "group": "p5_veh14"
+ },
+ {
+  "name": "p5_veh14_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 14 stated value + VIN",
+  "group": "p5_veh14"
+ },
+ {
+  "name": "p5_veh15_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 15 description",
+  "group": "p5_veh15"
+ },
+ {
+  "name": "p5_veh15_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 15 stated value + VIN",
+  "group": "p5_veh15"
+ },
+ {
+  "name": "p5_veh16_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 16 description",
+  "group": "p5_veh16"
+ },
+ {
+  "name": "p5_veh16_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 16 stated value + VIN",
+  "group": "p5_veh16"
+ },
+ {
+  "name": "p5_veh17_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 17 description",
+  "group": "p5_veh17"
+ },
+ {
+  "name": "p5_veh17_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 17 stated value + VIN",
+  "group": "p5_veh17"
+ },
+ {
+  "name": "p5_veh18_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 18 description",
+  "group": "p5_veh18"
+ },
+ {
+  "name": "p5_veh18_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 18 stated value + VIN",
+  "group": "p5_veh18"
+ },
+ {
+  "name": "p5_veh19_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 19 description",
+  "group": "p5_veh19"
+ },
+ {
+  "name": "p5_veh19_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 19 stated value + VIN",
+  "group": "p5_veh19"
+ },
+ {
+  "name": "p5_veh20_desc",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 20 description",
+  "group": "p5_veh20"
+ },
+ {
+  "name": "p5_veh20_value_vin",
+  "page": 5,
+  "type": "text",
+  "label": "Vehicle 20 stated value + VIN",
+  "group": "p5_veh20"
+ },
+ {
+  "name": "p6_veh01_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 1 description",
+  "group": "p6_veh01"
+ },
+ {
+  "name": "p6_veh01_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 1 - No coverage requested",
+  "group": "p6_veh01_onhook"
+ },
+ {
+  "name": "p6_veh01_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 1 - $100,000",
+  "group": "p6_veh01_onhook"
+ },
+ {
+  "name": "p6_veh01_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 1 - $50,000",
+  "group": "p6_veh01_onhook"
+ },
+ {
+  "name": "p6_veh01_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 1 - $25,000",
+  "group": "p6_veh01_onhook"
+ },
+ {
+  "name": "p6_veh01_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 1 - $:",
+  "group": "p6_veh01_onhook"
+ },
+ {
+  "name": "p6_veh01_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 1 - $: value",
+  "group": "p6_veh01_onhook"
+ },
+ {
+  "name": "p6_veh02_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 2 description",
+  "group": "p6_veh02"
+ },
+ {
+  "name": "p6_veh02_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 2 - No coverage requested",
+  "group": "p6_veh02_onhook"
+ },
+ {
+  "name": "p6_veh02_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 2 - $100,000",
+  "group": "p6_veh02_onhook"
+ },
+ {
+  "name": "p6_veh02_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 2 - $50,000",
+  "group": "p6_veh02_onhook"
+ },
+ {
+  "name": "p6_veh02_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 2 - $25,000",
+  "group": "p6_veh02_onhook"
+ },
+ {
+  "name": "p6_veh02_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 2 - $:",
+  "group": "p6_veh02_onhook"
+ },
+ {
+  "name": "p6_veh02_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 2 - $: value",
+  "group": "p6_veh02_onhook"
+ },
+ {
+  "name": "p6_veh03_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 3 description",
+  "group": "p6_veh03"
+ },
+ {
+  "name": "p6_veh03_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 3 - No coverage requested",
+  "group": "p6_veh03_onhook"
+ },
+ {
+  "name": "p6_veh03_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 3 - $100,000",
+  "group": "p6_veh03_onhook"
+ },
+ {
+  "name": "p6_veh03_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 3 - $50,000",
+  "group": "p6_veh03_onhook"
+ },
+ {
+  "name": "p6_veh03_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 3 - $25,000",
+  "group": "p6_veh03_onhook"
+ },
+ {
+  "name": "p6_veh03_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 3 - $:",
+  "group": "p6_veh03_onhook"
+ },
+ {
+  "name": "p6_veh03_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 3 - $: value",
+  "group": "p6_veh03_onhook"
+ },
+ {
+  "name": "p6_veh04_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 4 description",
+  "group": "p6_veh04"
+ },
+ {
+  "name": "p6_veh04_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 4 - No coverage requested",
+  "group": "p6_veh04_onhook"
+ },
+ {
+  "name": "p6_veh04_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 4 - $100,000",
+  "group": "p6_veh04_onhook"
+ },
+ {
+  "name": "p6_veh04_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 4 - $50,000",
+  "group": "p6_veh04_onhook"
+ },
+ {
+  "name": "p6_veh04_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 4 - $25,000",
+  "group": "p6_veh04_onhook"
+ },
+ {
+  "name": "p6_veh04_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 4 - $:",
+  "group": "p6_veh04_onhook"
+ },
+ {
+  "name": "p6_veh04_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 4 - $: value",
+  "group": "p6_veh04_onhook"
+ },
+ {
+  "name": "p6_veh05_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 5 description",
+  "group": "p6_veh05"
+ },
+ {
+  "name": "p6_veh05_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 5 - No coverage requested",
+  "group": "p6_veh05_onhook"
+ },
+ {
+  "name": "p6_veh05_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 5 - $100,000",
+  "group": "p6_veh05_onhook"
+ },
+ {
+  "name": "p6_veh05_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 5 - $50,000",
+  "group": "p6_veh05_onhook"
+ },
+ {
+  "name": "p6_veh05_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 5 - $25,000",
+  "group": "p6_veh05_onhook"
+ },
+ {
+  "name": "p6_veh05_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 5 - $:",
+  "group": "p6_veh05_onhook"
+ },
+ {
+  "name": "p6_veh05_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 5 - $: value",
+  "group": "p6_veh05_onhook"
+ },
+ {
+  "name": "p6_veh06_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 6 description",
+  "group": "p6_veh06"
+ },
+ {
+  "name": "p6_veh06_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 6 - No coverage requested",
+  "group": "p6_veh06_onhook"
+ },
+ {
+  "name": "p6_veh06_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 6 - $100,000",
+  "group": "p6_veh06_onhook"
+ },
+ {
+  "name": "p6_veh06_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 6 - $50,000",
+  "group": "p6_veh06_onhook"
+ },
+ {
+  "name": "p6_veh06_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 6 - $25,000",
+  "group": "p6_veh06_onhook"
+ },
+ {
+  "name": "p6_veh06_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 6 - $:",
+  "group": "p6_veh06_onhook"
+ },
+ {
+  "name": "p6_veh06_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 6 - $: value",
+  "group": "p6_veh06_onhook"
+ },
+ {
+  "name": "p6_veh07_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 7 description",
+  "group": "p6_veh07"
+ },
+ {
+  "name": "p6_veh07_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 7 - No coverage requested",
+  "group": "p6_veh07_onhook"
+ },
+ {
+  "name": "p6_veh07_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 7 - $100,000",
+  "group": "p6_veh07_onhook"
+ },
+ {
+  "name": "p6_veh07_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 7 - $50,000",
+  "group": "p6_veh07_onhook"
+ },
+ {
+  "name": "p6_veh07_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 7 - $25,000",
+  "group": "p6_veh07_onhook"
+ },
+ {
+  "name": "p6_veh07_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 7 - $:",
+  "group": "p6_veh07_onhook"
+ },
+ {
+  "name": "p6_veh07_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 7 - $: value",
+  "group": "p6_veh07_onhook"
+ },
+ {
+  "name": "p6_veh08_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 8 description",
+  "group": "p6_veh08"
+ },
+ {
+  "name": "p6_veh08_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 8 - No coverage requested",
+  "group": "p6_veh08_onhook"
+ },
+ {
+  "name": "p6_veh08_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 8 - $100,000",
+  "group": "p6_veh08_onhook"
+ },
+ {
+  "name": "p6_veh08_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 8 - $50,000",
+  "group": "p6_veh08_onhook"
+ },
+ {
+  "name": "p6_veh08_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 8 - $25,000",
+  "group": "p6_veh08_onhook"
+ },
+ {
+  "name": "p6_veh08_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 8 - $:",
+  "group": "p6_veh08_onhook"
+ },
+ {
+  "name": "p6_veh08_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 8 - $: value",
+  "group": "p6_veh08_onhook"
+ },
+ {
+  "name": "p6_veh09_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 9 description",
+  "group": "p6_veh09"
+ },
+ {
+  "name": "p6_veh09_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 9 - No coverage requested",
+  "group": "p6_veh09_onhook"
+ },
+ {
+  "name": "p6_veh09_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 9 - $100,000",
+  "group": "p6_veh09_onhook"
+ },
+ {
+  "name": "p6_veh09_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 9 - $50,000",
+  "group": "p6_veh09_onhook"
+ },
+ {
+  "name": "p6_veh09_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 9 - $25,000",
+  "group": "p6_veh09_onhook"
+ },
+ {
+  "name": "p6_veh09_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 9 - $:",
+  "group": "p6_veh09_onhook"
+ },
+ {
+  "name": "p6_veh09_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 9 - $: value",
+  "group": "p6_veh09_onhook"
+ },
+ {
+  "name": "p6_veh10_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 10 description",
+  "group": "p6_veh10"
+ },
+ {
+  "name": "p6_veh10_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 10 - No coverage requested",
+  "group": "p6_veh10_onhook"
+ },
+ {
+  "name": "p6_veh10_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 10 - $100,000",
+  "group": "p6_veh10_onhook"
+ },
+ {
+  "name": "p6_veh10_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 10 - $50,000",
+  "group": "p6_veh10_onhook"
+ },
+ {
+  "name": "p6_veh10_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 10 - $25,000",
+  "group": "p6_veh10_onhook"
+ },
+ {
+  "name": "p6_veh10_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 10 - $:",
+  "group": "p6_veh10_onhook"
+ },
+ {
+  "name": "p6_veh10_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 10 - $: value",
+  "group": "p6_veh10_onhook"
+ },
+ {
+  "name": "p6_veh11_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 11 description",
+  "group": "p6_veh11"
+ },
+ {
+  "name": "p6_veh11_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 11 - No coverage requested",
+  "group": "p6_veh11_onhook"
+ },
+ {
+  "name": "p6_veh11_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 11 - $100,000",
+  "group": "p6_veh11_onhook"
+ },
+ {
+  "name": "p6_veh11_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 11 - $50,000",
+  "group": "p6_veh11_onhook"
+ },
+ {
+  "name": "p6_veh11_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 11 - $25,000",
+  "group": "p6_veh11_onhook"
+ },
+ {
+  "name": "p6_veh11_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 11 - $:",
+  "group": "p6_veh11_onhook"
+ },
+ {
+  "name": "p6_veh11_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 11 - $: value",
+  "group": "p6_veh11_onhook"
+ },
+ {
+  "name": "p6_veh12_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 12 description",
+  "group": "p6_veh12"
+ },
+ {
+  "name": "p6_veh12_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 12 - No coverage requested",
+  "group": "p6_veh12_onhook"
+ },
+ {
+  "name": "p6_veh12_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 12 - $100,000",
+  "group": "p6_veh12_onhook"
+ },
+ {
+  "name": "p6_veh12_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 12 - $50,000",
+  "group": "p6_veh12_onhook"
+ },
+ {
+  "name": "p6_veh12_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 12 - $25,000",
+  "group": "p6_veh12_onhook"
+ },
+ {
+  "name": "p6_veh12_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 12 - $:",
+  "group": "p6_veh12_onhook"
+ },
+ {
+  "name": "p6_veh12_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 12 - $: value",
+  "group": "p6_veh12_onhook"
+ },
+ {
+  "name": "p6_veh13_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 13 description",
+  "group": "p6_veh13"
+ },
+ {
+  "name": "p6_veh13_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 13 - No coverage requested",
+  "group": "p6_veh13_onhook"
+ },
+ {
+  "name": "p6_veh13_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 13 - $100,000",
+  "group": "p6_veh13_onhook"
+ },
+ {
+  "name": "p6_veh13_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 13 - $50,000",
+  "group": "p6_veh13_onhook"
+ },
+ {
+  "name": "p6_veh13_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 13 - $25,000",
+  "group": "p6_veh13_onhook"
+ },
+ {
+  "name": "p6_veh13_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 13 - $:",
+  "group": "p6_veh13_onhook"
+ },
+ {
+  "name": "p6_veh13_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 13 - $: value",
+  "group": "p6_veh13_onhook"
+ },
+ {
+  "name": "p6_veh14_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 14 description",
+  "group": "p6_veh14"
+ },
+ {
+  "name": "p6_veh14_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 14 - No coverage requested",
+  "group": "p6_veh14_onhook"
+ },
+ {
+  "name": "p6_veh14_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 14 - $100,000",
+  "group": "p6_veh14_onhook"
+ },
+ {
+  "name": "p6_veh14_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 14 - $50,000",
+  "group": "p6_veh14_onhook"
+ },
+ {
+  "name": "p6_veh14_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 14 - $25,000",
+  "group": "p6_veh14_onhook"
+ },
+ {
+  "name": "p6_veh14_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 14 - $:",
+  "group": "p6_veh14_onhook"
+ },
+ {
+  "name": "p6_veh14_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 14 - $: value",
+  "group": "p6_veh14_onhook"
+ },
+ {
+  "name": "p6_veh15_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 15 description",
+  "group": "p6_veh15"
+ },
+ {
+  "name": "p6_veh15_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 15 - No coverage requested",
+  "group": "p6_veh15_onhook"
+ },
+ {
+  "name": "p6_veh15_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 15 - $100,000",
+  "group": "p6_veh15_onhook"
+ },
+ {
+  "name": "p6_veh15_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 15 - $50,000",
+  "group": "p6_veh15_onhook"
+ },
+ {
+  "name": "p6_veh15_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 15 - $25,000",
+  "group": "p6_veh15_onhook"
+ },
+ {
+  "name": "p6_veh15_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 15 - $:",
+  "group": "p6_veh15_onhook"
+ },
+ {
+  "name": "p6_veh15_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 15 - $: value",
+  "group": "p6_veh15_onhook"
+ },
+ {
+  "name": "p6_veh16_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 16 description",
+  "group": "p6_veh16"
+ },
+ {
+  "name": "p6_veh16_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 16 - No coverage requested",
+  "group": "p6_veh16_onhook"
+ },
+ {
+  "name": "p6_veh16_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 16 - $100,000",
+  "group": "p6_veh16_onhook"
+ },
+ {
+  "name": "p6_veh16_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 16 - $50,000",
+  "group": "p6_veh16_onhook"
+ },
+ {
+  "name": "p6_veh16_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 16 - $25,000",
+  "group": "p6_veh16_onhook"
+ },
+ {
+  "name": "p6_veh16_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 16 - $:",
+  "group": "p6_veh16_onhook"
+ },
+ {
+  "name": "p6_veh16_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 16 - $: value",
+  "group": "p6_veh16_onhook"
+ },
+ {
+  "name": "p6_veh17_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 17 description",
+  "group": "p6_veh17"
+ },
+ {
+  "name": "p6_veh17_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 17 - No coverage requested",
+  "group": "p6_veh17_onhook"
+ },
+ {
+  "name": "p6_veh17_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 17 - $100,000",
+  "group": "p6_veh17_onhook"
+ },
+ {
+  "name": "p6_veh17_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 17 - $50,000",
+  "group": "p6_veh17_onhook"
+ },
+ {
+  "name": "p6_veh17_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 17 - $25,000",
+  "group": "p6_veh17_onhook"
+ },
+ {
+  "name": "p6_veh17_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 17 - $:",
+  "group": "p6_veh17_onhook"
+ },
+ {
+  "name": "p6_veh17_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 17 - $: value",
+  "group": "p6_veh17_onhook"
+ },
+ {
+  "name": "p6_veh18_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 18 description",
+  "group": "p6_veh18"
+ },
+ {
+  "name": "p6_veh18_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 18 - No coverage requested",
+  "group": "p6_veh18_onhook"
+ },
+ {
+  "name": "p6_veh18_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 18 - $100,000",
+  "group": "p6_veh18_onhook"
+ },
+ {
+  "name": "p6_veh18_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 18 - $50,000",
+  "group": "p6_veh18_onhook"
+ },
+ {
+  "name": "p6_veh18_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 18 - $25,000",
+  "group": "p6_veh18_onhook"
+ },
+ {
+  "name": "p6_veh18_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 18 - $:",
+  "group": "p6_veh18_onhook"
+ },
+ {
+  "name": "p6_veh18_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 18 - $: value",
+  "group": "p6_veh18_onhook"
+ },
+ {
+  "name": "p6_veh19_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 19 description",
+  "group": "p6_veh19"
+ },
+ {
+  "name": "p6_veh19_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 19 - No coverage requested",
+  "group": "p6_veh19_onhook"
+ },
+ {
+  "name": "p6_veh19_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 19 - $100,000",
+  "group": "p6_veh19_onhook"
+ },
+ {
+  "name": "p6_veh19_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 19 - $50,000",
+  "group": "p6_veh19_onhook"
+ },
+ {
+  "name": "p6_veh19_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 19 - $25,000",
+  "group": "p6_veh19_onhook"
+ },
+ {
+  "name": "p6_veh19_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 19 - $:",
+  "group": "p6_veh19_onhook"
+ },
+ {
+  "name": "p6_veh19_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 19 - $: value",
+  "group": "p6_veh19_onhook"
+ },
+ {
+  "name": "p6_veh20_yearmaker",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 20 description",
+  "group": "p6_veh20"
+ },
+ {
+  "name": "p6_veh20_onhook_none",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 20 - No coverage requested",
+  "group": "p6_veh20_onhook"
+ },
+ {
+  "name": "p6_veh20_onhook_100k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 20 - $100,000",
+  "group": "p6_veh20_onhook"
+ },
+ {
+  "name": "p6_veh20_onhook_50k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 20 - $50,000",
+  "group": "p6_veh20_onhook"
+ },
+ {
+  "name": "p6_veh20_onhook_25k",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 20 - $25,000",
+  "group": "p6_veh20_onhook"
+ },
+ {
+  "name": "p6_veh20_onhook_other",
+  "page": 6,
+  "type": "checkbox",
+  "label": "Vehicle 20 - $:",
+  "group": "p6_veh20_onhook"
+ },
+ {
+  "name": "p6_veh20_onhook_other_amt",
+  "page": 6,
+  "type": "text",
+  "label": "Vehicle 20 - $: value",
+  "group": "p6_veh20_onhook"
+ },
+ {
+  "name": "p7_total_number_of_other_employees",
+  "page": 7,
+  "type": "text",
+  "label": "Total number of other employees",
+  "group": "p7_total_number_of_other_employees"
+ },
+ {
+  "name": "p7_drv01_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 1 name",
+  "group": "p7_drv01"
+ },
+ {
+  "name": "p7_drv01_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 1 details",
+  "group": "p7_drv01"
+ },
+ {
+  "name": "p7_drv02_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 2 name",
+  "group": "p7_drv02"
+ },
+ {
+  "name": "p7_drv02_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 2 details",
+  "group": "p7_drv02"
+ },
+ {
+  "name": "p7_drv03_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 3 name",
+  "group": "p7_drv03"
+ },
+ {
+  "name": "p7_drv03_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 3 details",
+  "group": "p7_drv03"
+ },
+ {
+  "name": "p7_drv04_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 4 name",
+  "group": "p7_drv04"
+ },
+ {
+  "name": "p7_drv04_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 4 details",
+  "group": "p7_drv04"
+ },
+ {
+  "name": "p7_drv05_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 5 name",
+  "group": "p7_drv05"
+ },
+ {
+  "name": "p7_drv05_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 5 details",
+  "group": "p7_drv05"
+ },
+ {
+  "name": "p7_drv06_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 6 name",
+  "group": "p7_drv06"
+ },
+ {
+  "name": "p7_drv06_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 6 details",
+  "group": "p7_drv06"
+ },
+ {
+  "name": "p7_drv07_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 7 name",
+  "group": "p7_drv07"
+ },
+ {
+  "name": "p7_drv07_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 7 details",
+  "group": "p7_drv07"
+ },
+ {
+  "name": "p7_drv08_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 8 name",
+  "group": "p7_drv08"
+ },
+ {
+  "name": "p7_drv08_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 8 details",
+  "group": "p7_drv08"
+ },
+ {
+  "name": "p7_drv09_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 9 name",
+  "group": "p7_drv09"
+ },
+ {
+  "name": "p7_drv09_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 9 details",
+  "group": "p7_drv09"
+ },
+ {
+  "name": "p7_drv10_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 10 name",
+  "group": "p7_drv10"
+ },
+ {
+  "name": "p7_drv10_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 10 details",
+  "group": "p7_drv10"
+ },
+ {
+  "name": "p7_drv11_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 11 name",
+  "group": "p7_drv11"
+ },
+ {
+  "name": "p7_drv11_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 11 details",
+  "group": "p7_drv11"
+ },
+ {
+  "name": "p7_drv12_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 12 name",
+  "group": "p7_drv12"
+ },
+ {
+  "name": "p7_drv12_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 12 details",
+  "group": "p7_drv12"
+ },
+ {
+  "name": "p7_drv13_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 13 name",
+  "group": "p7_drv13"
+ },
+ {
+  "name": "p7_drv13_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 13 details",
+  "group": "p7_drv13"
+ },
+ {
+  "name": "p7_drv14_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 14 name",
+  "group": "p7_drv14"
+ },
+ {
+  "name": "p7_drv14_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 14 details",
+  "group": "p7_drv14"
+ },
+ {
+  "name": "p7_drv15_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 15 name",
+  "group": "p7_drv15"
+ },
+ {
+  "name": "p7_drv15_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 15 details",
+  "group": "p7_drv15"
+ },
+ {
+  "name": "p7_drv16_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 16 name",
+  "group": "p7_drv16"
+ },
+ {
+  "name": "p7_drv16_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 16 details",
+  "group": "p7_drv16"
+ },
+ {
+  "name": "p7_drv17_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 17 name",
+  "group": "p7_drv17"
+ },
+ {
+  "name": "p7_drv17_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 17 details",
+  "group": "p7_drv17"
+ },
+ {
+  "name": "p7_drv18_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 18 name",
+  "group": "p7_drv18"
+ },
+ {
+  "name": "p7_drv18_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 18 details",
+  "group": "p7_drv18"
+ },
+ {
+  "name": "p7_drv19_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 19 name",
+  "group": "p7_drv19"
+ },
+ {
+  "name": "p7_drv19_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 19 details",
+  "group": "p7_drv19"
+ },
+ {
+  "name": "p7_drv20_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 20 name",
+  "group": "p7_drv20"
+ },
+ {
+  "name": "p7_drv20_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 20 details",
+  "group": "p7_drv20"
+ },
+ {
+  "name": "p7_drv21_name",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 21 name",
+  "group": "p7_drv21"
+ },
+ {
+  "name": "p7_drv21_details",
+  "page": 7,
+  "type": "text",
+  "label": "Driver 21 details",
+  "group": "p7_drv21"
+ },
+ {
+  "name": "p8_location_full_address",
+  "page": 8,
+  "type": "text",
+  "label": "Location full address",
+  "group": "p8_location_full_address"
+ },
+ {
+  "name": "p8_home_based_business_no",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Home based business - No",
+  "group": "p8_home_based_business"
+ },
+ {
+  "name": "p8_home_based_business_yes",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Home based business - Yes",
+  "group": "p8_home_based_business"
+ },
+ {
+  "name": "p8_commercial_location_number",
+  "page": 8,
+  "type": "text",
+  "label": "Commercial location number",
+  "group": "p8_commercial_location_number"
+ },
+ {
+  "name": "p8_location_description_none",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Location description - No commercial locations",
+  "group": "p8_location_description"
+ },
+ {
+  "name": "p8_location_description_storage_lot",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Location description - Storage lot",
+  "group": "p8_location_description"
+ },
+ {
+  "name": "p8_location_description_other",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Location description - Other:",
+  "group": "p8_location_description"
+ },
+ {
+  "name": "p8_location_description_other_desc",
+  "page": 8,
+  "type": "text",
+  "label": "Location description - Other: value",
+  "group": "p8_location_description"
+ },
+ {
+  "name": "p8_garage_keepers_legal_liability_none",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Garage keepers legal liability - No coverage requested",
+  "group": "p8_garage_keepers_legal_liability"
+ },
+ {
+  "name": "p8_garage_keepers_legal_liability_150k",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Garage keepers legal liability - $150,000",
+  "group": "p8_garage_keepers_legal_liability"
+ },
+ {
+  "name": "p8_garage_keepers_legal_liability_100k",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Garage keepers legal liability - $100,000",
+  "group": "p8_garage_keepers_legal_liability"
+ },
+ {
+  "name": "p8_garage_keepers_legal_liability_other",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Garage keepers legal liability - $:",
+  "group": "p8_garage_keepers_legal_liability"
+ },
+ {
+  "name": "p8_garage_keepers_legal_liability_other_amt",
+  "page": 8,
+  "type": "text",
+  "label": "Garage keepers legal liability - $: value",
+  "group": "p8_garage_keepers_legal_liability"
+ },
+ {
+  "name": "p8_building_property_stated_value_none",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Building property stated value - No coverage requested",
+  "group": "p8_building_property_stated_value"
+ },
+ {
+  "name": "p8_building_property_stated_value_other",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Building property stated value - $;",
+  "group": "p8_building_property_stated_value"
+ },
+ {
+  "name": "p8_building_property_stated_value_other_amt",
+  "page": 8,
+  "type": "text",
+  "label": "Building property stated value - $; value",
+  "group": "p8_building_property_stated_value"
+ },
+ {
+  "name": "p8_business_personal_property_value_none",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Business personal property value - No coverage requested",
+  "group": "p8_business_personal_property_value"
+ },
+ {
+  "name": "p8_business_personal_property_value_other",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Business personal property value - $;",
+  "group": "p8_business_personal_property_value"
+ },
+ {
+  "name": "p8_business_personal_property_value_other_amt",
+  "page": 8,
+  "type": "text",
+  "label": "Business personal property value - $; value",
+  "group": "p8_business_personal_property_value"
+ },
+ {
+  "name": "p8_maximum_value_per_vehicle",
+  "page": 8,
+  "type": "text",
+  "label": "Maximum value per vehicle",
+  "group": "p8_maximum_value_per_vehicle"
+ },
+ {
+  "name": "p8_average_value_per_vehicle",
+  "page": 8,
+  "type": "text",
+  "label": "Average value per vehicle",
+  "group": "p8_average_value_per_vehicle"
+ },
+ {
+  "name": "p8_average_of_vehicles_stored",
+  "page": 8,
+  "type": "text",
+  "label": "Average # of vehicles stored",
+  "group": "p8_average_of_vehicles_stored"
+ },
+ {
+  "name": "p8_max_of_vehicles_stored",
+  "page": 8,
+  "type": "text",
+  "label": "Max # of vehicles stored",
+  "group": "p8_max_of_vehicles_stored"
+ },
+ {
+  "name": "p8_outdoor_storage_sq_footage",
+  "page": 8,
+  "type": "text",
+  "label": "Outdoor storage sq footage",
+  "group": "p8_outdoor_storage_sq_footage"
+ },
+ {
+  "name": "p8_indoor_storage_square_footage",
+  "page": 8,
+  "type": "text",
+  "label": "Indoor storage square footage",
+  "group": "p8_indoor_storage_square_footage"
+ },
+ {
+  "name": "p8_office_square_footage",
+  "page": 8,
+  "type": "text",
+  "label": "Office square footage",
+  "group": "p8_office_square_footage"
+ },
+ {
+  "name": "p8_own_building_at_location_no",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Own building at location - No",
+  "group": "p8_own_building_at_location"
+ },
+ {
+  "name": "p8_own_building_at_location_yes",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Own building at location - Yes #:",
+  "group": "p8_own_building_at_location"
+ },
+ {
+  "name": "p8_own_building_at_location_num",
+  "page": 8,
+  "type": "text",
+  "label": "Own building at location - Yes #: value",
+  "group": "p8_own_building_at_location"
+ },
+ {
+  "name": "p8_dogs_at_location_na",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Dogs at location - N/A",
+  "group": "p8_dogs_at_location"
+ },
+ {
+  "name": "p8_dogs_at_location_no",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Dogs at location - No",
+  "group": "p8_dogs_at_location"
+ },
+ {
+  "name": "p8_dogs_at_location_yes",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Dogs at location - Yes, breed of dog:",
+  "group": "p8_dogs_at_location"
+ },
+ {
+  "name": "p8_dogs_at_location_breed",
+  "page": 8,
+  "type": "text",
+  "label": "Dogs at location - Yes, breed of dog: value",
+  "group": "p8_dogs_at_location"
+ },
+ {
+  "name": "p8_video_recording_at_location_na",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Video recording at location - N/A",
+  "group": "p8_video_recording_at_location"
+ },
+ {
+  "name": "p8_video_recording_at_location_no",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Video recording at location - No",
+  "group": "p8_video_recording_at_location"
+ },
+ {
+  "name": "p8_video_recording_at_location_yes",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Video recording at location - Yes, provider:",
+  "group": "p8_video_recording_at_location"
+ },
+ {
+  "name": "p8_video_recording_at_location_provider",
+  "page": 8,
+  "type": "text",
+  "label": "Video recording at location - Yes, provider: value",
+  "group": "p8_video_recording_at_location"
+ },
+ {
+  "name": "p8_central_alarm_at_location_na",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Central alarm at location - N/A",
+  "group": "p8_central_alarm_at_location"
+ },
+ {
+  "name": "p8_central_alarm_at_location_no",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Central alarm at location - No",
+  "group": "p8_central_alarm_at_location"
+ },
+ {
+  "name": "p8_central_alarm_at_location_yes",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Central alarm at location - Yes, provider:",
+  "group": "p8_central_alarm_at_location"
+ },
+ {
+  "name": "p8_central_alarm_at_location_provider",
+  "page": 8,
+  "type": "text",
+  "label": "Central alarm at location - Yes, provider: value",
+  "group": "p8_central_alarm_at_location"
+ },
+ {
+  "name": "p8_policy_regarding_handling_of_customer_keys_lockbox",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Policy regarding handling of customer keys - Lockbox only",
+  "group": "p8_policy_regarding_handling_of_customer_keys"
+ },
+ {
+  "name": "p8_policy_regarding_handling_of_customer_keys_other",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Policy regarding handling of customer keys - Other, describe:",
+  "group": "p8_policy_regarding_handling_of_customer_keys"
+ },
+ {
+  "name": "p8_policy_regarding_handling_of_customer_keys_other_desc",
+  "page": 8,
+  "type": "text",
+  "label": "Policy regarding handling of customer keys - Other, describe: value",
+  "group": "p8_policy_regarding_handling_of_customer_keys"
+ },
+ {
+  "name": "p8_policy_regarding_returning_personal_property_proper_id",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Policy regarding returning personal property - Proper ID provided to reclaim",
+  "group": "p8_policy_regarding_returning_personal_property"
+ },
+ {
+  "name": "p8_policy_regarding_returning_personal_property_other",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Policy regarding returning personal property - Other, describe:",
+  "group": "p8_policy_regarding_returning_personal_property"
+ },
+ {
+  "name": "p8_policy_regarding_returning_personal_property_other_desc",
+  "page": 8,
+  "type": "text",
+  "label": "Policy regarding returning personal property - Other, describe: value",
+  "group": "p8_policy_regarding_returning_personal_property"
+ },
+ {
+  "name": "p8_policy_regarding_handling_of_weapons_or_drugs_proper_id",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Policy regarding handling of weapons or drugs - Proper ID provided to reclaim",
+  "group": "p8_policy_regarding_handling_of_weapons_or_drugs"
+ },
+ {
+  "name": "p8_policy_regarding_handling_of_weapons_or_drugs_notify_police",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Policy regarding handling of weapons or drugs - Notify police of illegal weapons or drugs",
+  "group": "p8_policy_regarding_handling_of_weapons_or_drugs"
+ },
+ {
+  "name": "p8_policy_regarding_relinquishing_vehicles_proper_id",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Policy regarding relinquishing vehicles - Proper ID provided to reclaim",
+  "group": "p8_policy_regarding_relinquishing_vehicles"
+ },
+ {
+  "name": "p8_policy_regarding_relinquishing_vehicles_registration_verified",
+  "page": 8,
+  "type": "checkbox",
+  "label": "Policy regarding relinquishing vehicles - Proper registration verified",
+  "group": "p8_policy_regarding_relinquishing_vehicles"
+ },
+ {
+  "name": "p8_location_details",
+  "page": 8,
+  "type": "multiline",
+  "label": "Location details",
+  "group": "p8_location_details"
+ },
+ {
+  "name": "uw_q2",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 2 question",
+  "group": "uw_2"
+ },
+ {
+  "name": "uw_a2",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 2 answer",
+  "group": "uw_2"
+ },
+ {
+  "name": "uw_q3",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 3 question",
+  "group": "uw_3"
+ },
+ {
+  "name": "uw_a3",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 3 answer",
+  "group": "uw_3"
+ },
+ {
+  "name": "uw_q4",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 4 question",
+  "group": "uw_4"
+ },
+ {
+  "name": "uw_a4",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 4 answer",
+  "group": "uw_4"
+ },
+ {
+  "name": "uw_q5",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 5 question",
+  "group": "uw_5"
+ },
+ {
+  "name": "uw_a5",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 5 answer",
+  "group": "uw_5"
+ },
+ {
+  "name": "uw_q6",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 6 question",
+  "group": "uw_6"
+ },
+ {
+  "name": "uw_a6",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 6 answer",
+  "group": "uw_6"
+ },
+ {
+  "name": "uw_q7",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 7 question",
+  "group": "uw_7"
+ },
+ {
+  "name": "uw_a7",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 7 answer",
+  "group": "uw_7"
+ },
+ {
+  "name": "uw_q8",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 8 question",
+  "group": "uw_8"
+ },
+ {
+  "name": "uw_a8",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 8 answer",
+  "group": "uw_8"
+ },
+ {
+  "name": "uw_q9",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 9 question",
+  "group": "uw_9"
+ },
+ {
+  "name": "uw_a9",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 9 answer",
+  "group": "uw_9"
+ },
+ {
+  "name": "uw_q10",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 10 question",
+  "group": "uw_10"
+ },
+ {
+  "name": "uw_a10",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 10 answer",
+  "group": "uw_10"
+ },
+ {
+  "name": "uw_q11",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 11 question",
+  "group": "uw_11"
+ },
+ {
+  "name": "uw_a11",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 11 answer",
+  "group": "uw_11"
+ },
+ {
+  "name": "uw_q12",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 12 question",
+  "group": "uw_12"
+ },
+ {
+  "name": "uw_a12",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 12 answer",
+  "group": "uw_12"
+ },
+ {
+  "name": "uw_q13",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 13 question",
+  "group": "uw_13"
+ },
+ {
+  "name": "uw_a13",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 13 answer",
+  "group": "uw_13"
+ },
+ {
+  "name": "uw_q14",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 14 question",
+  "group": "uw_14"
+ },
+ {
+  "name": "uw_a14",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 14 answer",
+  "group": "uw_14"
+ },
+ {
+  "name": "uw_q15",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 15 question",
+  "group": "uw_15"
+ },
+ {
+  "name": "uw_a15",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 15 answer",
+  "group": "uw_15"
+ },
+ {
+  "name": "uw_q16",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 16 question",
+  "group": "uw_16"
+ },
+ {
+  "name": "uw_a16",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 16 answer",
+  "group": "uw_16"
+ },
+ {
+  "name": "uw_q17",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 17 question",
+  "group": "uw_17"
+ },
+ {
+  "name": "uw_a17",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 17 answer",
+  "group": "uw_17"
+ },
+ {
+  "name": "uw_q18",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 18 question",
+  "group": "uw_18"
+ },
+ {
+  "name": "uw_a18",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 18 answer",
+  "group": "uw_18"
+ },
+ {
+  "name": "uw_q19",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 19 question",
+  "group": "uw_19"
+ },
+ {
+  "name": "uw_a19",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 19 answer",
+  "group": "uw_19"
+ },
+ {
+  "name": "uw_q20",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 20 question",
+  "group": "uw_20"
+ },
+ {
+  "name": "uw_a20",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 20 answer",
+  "group": "uw_20"
+ },
+ {
+  "name": "uw_q21",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 21 question",
+  "group": "uw_21"
+ },
+ {
+  "name": "uw_a21",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 21 answer",
+  "group": "uw_21"
+ },
+ {
+  "name": "uw_q22",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 22 question",
+  "group": "uw_22"
+ },
+ {
+  "name": "uw_a22",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 22 answer",
+  "group": "uw_22"
+ },
+ {
+  "name": "uw_q23",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 23 question",
+  "group": "uw_23"
+ },
+ {
+  "name": "uw_a23",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 23 answer",
+  "group": "uw_23"
+ },
+ {
+  "name": "uw_q24",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 24 question",
+  "group": "uw_24"
+ },
+ {
+  "name": "uw_a24",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 24 answer",
+  "group": "uw_24"
+ },
+ {
+  "name": "uw_q25",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 25 question",
+  "group": "uw_25"
+ },
+ {
+  "name": "uw_a25",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 25 answer",
+  "group": "uw_25"
+ },
+ {
+  "name": "uw_q26",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 26 question",
+  "group": "uw_26"
+ },
+ {
+  "name": "uw_a26",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 26 answer",
+  "group": "uw_26"
+ },
+ {
+  "name": "uw_q27",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 27 question",
+  "group": "uw_27"
+ },
+ {
+  "name": "uw_a27",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 27 answer",
+  "group": "uw_27"
+ },
+ {
+  "name": "uw_q28",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 28 question",
+  "group": "uw_28"
+ },
+ {
+  "name": "uw_a28",
+  "page": 9,
+  "type": "multiline",
+  "label": "Underwriting Q 28 answer",
+  "group": "uw_28"
+ },
+ {
+  "name": "p10_2024_insurance_carrier",
+  "page": 10,
+  "type": "text",
+  "label": "2024 insurance carrier",
+  "group": "p10_2024_insurance_carrier"
+ },
+ {
+  "name": "p10_row144_no_policy",
+  "page": 10,
+  "type": "checkbox",
+  "label": "2024 insurance carrier - No policy in force",
+  "group": "p10_row144"
+ },
+ {
+  "name": "p10_policy_number",
+  "page": 10,
+  "type": "text",
+  "label": "Policy number",
+  "group": "p10_policy_number"
+ },
+ {
+  "name": "p10_effective_dates",
+  "page": 10,
+  "type": "text",
+  "label": "Effective dates",
+  "group": "p10_effective_dates"
+ },
+ {
+  "name": "p10_annual_premium",
+  "page": 10,
+  "type": "text",
+  "label": "Annual premium",
+  "group": "p10_annual_premium"
+ },
+ {
+  "name": "p10_broker_on_file_with_carrier_sierra",
+  "page": 10,
+  "type": "checkbox",
+  "label": "Broker on file with carrier - Sierra",
+  "group": "p10_broker_on_file_with_carrier"
+ },
+ {
+  "name": "p10_broker_on_file_with_carrier_other_broker",
+  "page": 10,
+  "type": "checkbox",
+  "label": "Broker on file with carrier - Other broker",
+  "group": "p10_broker_on_file_with_carrier"
+ },
+ {
+  "name": "p10_2023_insurance_carrier",
+  "page": 10,
+  "type": "text",
+  "label": "2023 insurance carrier",
+  "group": "p10_2023_insurance_carrier"
+ },
+ {
+  "name": "p10_row231_no_policy",
+  "page": 10,
+  "type": "checkbox",
+  "label": "2023 insurance carrier - No policy in force",
+  "group": "p10_row231"
+ },
+ {
+  "name": "p10_policy_number_2",
+  "page": 10,
+  "type": "text",
+  "label": "Policy number",
+  "group": "p10_policy_number"
+ },
+ {
+  "name": "p10_effective_dates_2",
+  "page": 10,
+  "type": "text",
+  "label": "Effective dates",
+  "group": "p10_effective_dates"
+ },
+ {
+  "name": "p10_annual_premium_2",
+  "page": 10,
+  "type": "text",
+  "label": "Annual premium",
+  "group": "p10_annual_premium"
+ },
+ {
+  "name": "p10_broker_on_file_with_carrier_sierra_2",
+  "page": 10,
+  "type": "checkbox",
+  "label": "Broker on file with carrier - Sierra",
+  "group": "p10_broker_on_file_with_carrier"
+ },
+ {
+  "name": "p10_broker_on_file_with_carrier_other_broker_2",
+  "page": 10,
+  "type": "checkbox",
+  "label": "Broker on file with carrier - Other broker",
+  "group": "p10_broker_on_file_with_carrier"
+ },
+ {
+  "name": "p10_2022_insurance_carrier",
+  "page": 10,
+  "type": "text",
+  "label": "2022 insurance carrier",
+  "group": "p10_2022_insurance_carrier"
+ },
+ {
+  "name": "p10_row317_no_policy",
+  "page": 10,
+  "type": "checkbox",
+  "label": "2022 insurance carrier - No policy in force",
+  "group": "p10_row317"
+ },
+ {
+  "name": "p10_policy_number_3",
+  "page": 10,
+  "type": "text",
+  "label": "Policy number",
+  "group": "p10_policy_number"
+ },
+ {
+  "name": "p10_effective_dates_3",
+  "page": 10,
+  "type": "text",
+  "label": "Effective dates",
+  "group": "p10_effective_dates"
+ },
+ {
+  "name": "p10_annual_premium_3",
+  "page": 10,
+  "type": "text",
+  "label": "Annual premium",
+  "group": "p10_annual_premium"
+ },
+ {
+  "name": "p10_broker_on_file_with_carrier_sierra_3",
+  "page": 10,
+  "type": "checkbox",
+  "label": "Broker on file with carrier - Sierra",
+  "group": "p10_broker_on_file_with_carrier"
+ },
+ {
+  "name": "p10_broker_on_file_with_carrier_other_broker_3",
+  "page": 10,
+  "type": "checkbox",
+  "label": "Broker on file with carrier - Other broker",
+  "group": "p10_broker_on_file_with_carrier"
+ },
+ {
+  "name": "p10_2021_insurance_carrier",
+  "page": 10,
+  "type": "text",
+  "label": "2021 insurance carrier",
+  "group": "p10_2021_insurance_carrier"
+ },
+ {
+  "name": "p10_row403_no_policy",
+  "page": 10,
+  "type": "checkbox",
+  "label": "2021 insurance carrier - No policy in force",
+  "group": "p10_row403"
+ },
+ {
+  "name": "p10_policy_number_4",
+  "page": 10,
+  "type": "text",
+  "label": "Policy number",
+  "group": "p10_policy_number"
+ },
+ {
+  "name": "p10_effective_dates_4",
+  "page": 10,
+  "type": "text",
+  "label": "Effective dates",
+  "group": "p10_effective_dates"
+ },
+ {
+  "name": "p10_annual_premium_4",
+  "page": 10,
+  "type": "text",
+  "label": "Annual premium",
+  "group": "p10_annual_premium"
+ },
+ {
+  "name": "p10_broker_on_file_with_carrier_sierra_4",
+  "page": 10,
+  "type": "checkbox",
+  "label": "Broker on file with carrier - Sierra",
+  "group": "p10_broker_on_file_with_carrier"
+ },
+ {
+  "name": "p10_broker_on_file_with_carrier_other_broker_4",
+  "page": 10,
+  "type": "checkbox",
+  "label": "Broker on file with carrier - Other broker",
+  "group": "p10_broker_on_file_with_carrier"
+ },
+ {
+  "name": "p10_2020_insurance_carrier",
+  "page": 10,
+  "type": "text",
+  "label": "2020 insurance carrier",
+  "group": "p10_2020_insurance_carrier"
+ },
+ {
+  "name": "p10_row490_no_policy",
+  "page": 10,
+  "type": "checkbox",
+  "label": "2020 insurance carrier - No policy in force",
+  "group": "p10_row490"
+ },
+ {
+  "name": "p10_policy_number_5",
+  "page": 10,
+  "type": "text",
+  "label": "Policy number",
+  "group": "p10_policy_number"
+ },
+ {
+  "name": "p10_effective_dates_5",
+  "page": 10,
+  "type": "text",
+  "label": "Effective dates",
+  "group": "p10_effective_dates"
+ },
+ {
+  "name": "p10_annual_premium_5",
+  "page": 10,
+  "type": "text",
+  "label": "Annual premium",
+  "group": "p10_annual_premium"
+ },
+ {
+  "name": "p10_broker_on_file_with_carrier_sierra_5",
+  "page": 10,
+  "type": "checkbox",
+  "label": "Broker on file with carrier - Sierra",
+  "group": "p10_broker_on_file_with_carrier"
+ },
+ {
+  "name": "p10_broker_on_file_with_carrier_other_broker_5",
+  "page": 10,
+  "type": "checkbox",
+  "label": "Broker on file with carrier - Other broker",
+  "group": "p10_broker_on_file_with_carrier"
+ },
+ {
+  "name": "p10_insured_name_signature_date",
+  "page": 10,
+  "type": "text",
+  "label": "Insured name + signature + date",
+  "group": "p10_insured_name_signature_date"
+ },
+ {
+  "name": "p11_2025_insurance_carrier",
+  "page": 11,
+  "type": "text",
+  "label": "2025 insurance carrier",
+  "group": "p11_2025_insurance_carrier"
+ },
+ {
+  "name": "p11_row144_npif",
+  "page": 11,
+  "type": "checkbox",
+  "label": "2025 insurance carrier - NPIF",
+  "group": "p11_row144"
+ },
+ {
+  "name": "p11_average_price_per_power_unit",
+  "page": 11,
+  "type": "text",
+  "label": "Average price per power unit",
+  "group": "p11_average_price_per_power_unit"
+ },
+ {
+  "name": "p11_annual_premium",
+  "page": 11,
+  "type": "text",
+  "label": "Annual premium",
+  "group": "p11_annual_premium"
+ },
+ {
+  "name": "p11_total_claims_paid",
+  "page": 11,
+  "type": "text",
+  "label": "Total claims paid",
+  "group": "p11_total_claims_paid"
+ },
+ {
+  "name": "p11_total_number_of_claims_paid",
+  "page": 11,
+  "type": "text",
+  "label": "Total number of claims paid",
+  "group": "p11_total_number_of_claims_paid"
+ },
+ {
+  "name": "p11_2024_insurance_carrier",
+  "page": 11,
+  "type": "text",
+  "label": "2024 insurance carrier",
+  "group": "p11_2024_insurance_carrier"
+ },
+ {
+  "name": "p11_row252_npif",
+  "page": 11,
+  "type": "checkbox",
+  "label": "2024 insurance carrier - NPIF",
+  "group": "p11_row252"
+ },
+ {
+  "name": "p11_average_price_per_power_unit_2",
+  "page": 11,
+  "type": "text",
+  "label": "Average price per power unit",
+  "group": "p11_average_price_per_power_unit"
+ },
+ {
+  "name": "p11_annual_premium_2",
+  "page": 11,
+  "type": "text",
+  "label": "Annual premium",
+  "group": "p11_annual_premium"
+ },
+ {
+  "name": "p11_total_claims_paid_2",
+  "page": 11,
+  "type": "text",
+  "label": "Total claims paid",
+  "group": "p11_total_claims_paid"
+ },
+ {
+  "name": "p11_total_number_of_claims_paid_2",
+  "page": 11,
+  "type": "text",
+  "label": "Total number of claims paid",
+  "group": "p11_total_number_of_claims_paid"
+ },
+ {
+  "name": "p11_2023_insurance_carrier",
+  "page": 11,
+  "type": "text",
+  "label": "2023 insurance carrier",
+  "group": "p11_2023_insurance_carrier"
+ },
+ {
+  "name": "p11_row360_npif",
+  "page": 11,
+  "type": "checkbox",
+  "label": "2023 insurance carrier - NPIF",
+  "group": "p11_row360"
+ },
+ {
+  "name": "p11_average_price_per_power_unit_3",
+  "page": 11,
+  "type": "text",
+  "label": "Average price per power unit",
+  "group": "p11_average_price_per_power_unit"
+ },
+ {
+  "name": "p11_annual_premium_3",
+  "page": 11,
+  "type": "text",
+  "label": "Annual premium",
+  "group": "p11_annual_premium"
+ },
+ {
+  "name": "p11_total_claims_paid_3",
+  "page": 11,
+  "type": "text",
+  "label": "Total claims paid",
+  "group": "p11_total_claims_paid"
+ },
+ {
+  "name": "p11_total_number_of_claims_paid_3",
+  "page": 11,
+  "type": "text",
+  "label": "Total number of claims paid",
+  "group": "p11_total_number_of_claims_paid"
+ },
+ {
+  "name": "p11_2022_insurance_carrier",
+  "page": 11,
+  "type": "text",
+  "label": "2022 insurance carrier",
+  "group": "p11_2022_insurance_carrier"
+ },
+ {
+  "name": "p11_row468_npif",
+  "page": 11,
+  "type": "checkbox",
+  "label": "2022 insurance carrier - NPIF",
+  "group": "p11_row468"
+ },
+ {
+  "name": "p11_average_price_per_power_unit_4",
+  "page": 11,
+  "type": "text",
+  "label": "Average price per power unit",
+  "group": "p11_average_price_per_power_unit"
+ },
+ {
+  "name": "p11_annual_premium_4",
+  "page": 11,
+  "type": "text",
+  "label": "Annual premium",
+  "group": "p11_annual_premium"
+ },
+ {
+  "name": "p11_total_claims_paid_4",
+  "page": 11,
+  "type": "text",
+  "label": "Total claims paid",
+  "group": "p11_total_claims_paid"
+ },
+ {
+  "name": "p11_total_number_of_claims_paid_4",
+  "page": 11,
+  "type": "text",
+  "label": "Total number of claims paid",
+  "group": "p11_total_number_of_claims_paid"
+ },
+ {
+  "name": "p11_2021_insurance_carrier",
+  "page": 11,
+  "type": "text",
+  "label": "2021 insurance carrier",
+  "group": "p11_2021_insurance_carrier"
+ },
+ {
+  "name": "p11_row576_npif",
+  "page": 11,
+  "type": "checkbox",
+  "label": "2021 insurance carrier - NPIF",
+  "group": "p11_row576"
+ },
+ {
+  "name": "p11_average_price_per_power_unit_5",
+  "page": 11,
+  "type": "text",
+  "label": "Average price per power unit",
+  "group": "p11_average_price_per_power_unit"
+ },
+ {
+  "name": "p11_annual_premium_5",
+  "page": 11,
+  "type": "text",
+  "label": "Annual premium",
+  "group": "p11_annual_premium"
+ },
+ {
+  "name": "p11_total_claims_paid_5",
+  "page": 11,
+  "type": "text",
+  "label": "Total claims paid",
+  "group": "p11_total_claims_paid"
+ },
+ {
+  "name": "p11_total_number_of_claims_paid_5",
+  "page": 11,
+  "type": "text",
+  "label": "Total number of claims paid",
+  "group": "p11_total_number_of_claims_paid"
+ },
+ {
+  "name": "p12_row144_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row144 - No",
+  "group": "p12_row144"
+ },
+ {
+  "name": "p12_row144_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row144 - Yes",
+  "group": "p12_row144"
+ },
+ {
+  "name": "p12_row144_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row144 - No",
+  "group": "p12_row144"
+ },
+ {
+  "name": "p12_row144_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row144 - Yes",
+  "group": "p12_row144"
+ },
+ {
+  "name": "p12_row166_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row166 - No",
+  "group": "p12_row166"
+ },
+ {
+  "name": "p12_row166_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row166 - Yes",
+  "group": "p12_row166"
+ },
+ {
+  "name": "p12_row166_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row166 - No",
+  "group": "p12_row166"
+ },
+ {
+  "name": "p12_row166_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row166 - Yes",
+  "group": "p12_row166"
+ },
+ {
+  "name": "p12_row187_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row187 - No",
+  "group": "p12_row187"
+ },
+ {
+  "name": "p12_row187_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row187 - Yes",
+  "group": "p12_row187"
+ },
+ {
+  "name": "p12_row187_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row187 - No",
+  "group": "p12_row187"
+ },
+ {
+  "name": "p12_row187_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row187 - Yes",
+  "group": "p12_row187"
+ },
+ {
+  "name": "p12_row209_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row209 - No",
+  "group": "p12_row209"
+ },
+ {
+  "name": "p12_row209_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row209 - Yes",
+  "group": "p12_row209"
+ },
+ {
+  "name": "p12_row209_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row209 - No",
+  "group": "p12_row209"
+ },
+ {
+  "name": "p12_row209_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row209 - Yes",
+  "group": "p12_row209"
+ },
+ {
+  "name": "p12_row231_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row231 - No",
+  "group": "p12_row231"
+ },
+ {
+  "name": "p12_row231_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row231 - Yes",
+  "group": "p12_row231"
+ },
+ {
+  "name": "p12_row231_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row231 - No",
+  "group": "p12_row231"
+ },
+ {
+  "name": "p12_row231_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row231 - Yes",
+  "group": "p12_row231"
+ },
+ {
+  "name": "p12_row252_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row252 - No",
+  "group": "p12_row252"
+ },
+ {
+  "name": "p12_row252_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row252 - Yes",
+  "group": "p12_row252"
+ },
+ {
+  "name": "p12_row252_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row252 - No",
+  "group": "p12_row252"
+ },
+ {
+  "name": "p12_row252_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row252 - Yes",
+  "group": "p12_row252"
+ },
+ {
+  "name": "p12_row274_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row274 - No",
+  "group": "p12_row274"
+ },
+ {
+  "name": "p12_row274_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row274 - Yes",
+  "group": "p12_row274"
+ },
+ {
+  "name": "p12_row274_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row274 - No",
+  "group": "p12_row274"
+ },
+ {
+  "name": "p12_row274_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row274 - Yes",
+  "group": "p12_row274"
+ },
+ {
+  "name": "p12_row295_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row295 - No",
+  "group": "p12_row295"
+ },
+ {
+  "name": "p12_row295_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row295 - Yes",
+  "group": "p12_row295"
+ },
+ {
+  "name": "p12_row295_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row295 - No",
+  "group": "p12_row295"
+ },
+ {
+  "name": "p12_row295_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row295 - Yes",
+  "group": "p12_row295"
+ },
+ {
+  "name": "p12_row317_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row317 - No",
+  "group": "p12_row317"
+ },
+ {
+  "name": "p12_row317_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row317 - Yes",
+  "group": "p12_row317"
+ },
+ {
+  "name": "p12_row317_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row317 - No",
+  "group": "p12_row317"
+ },
+ {
+  "name": "p12_row317_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row317 - Yes",
+  "group": "p12_row317"
+ },
+ {
+  "name": "p12_row339_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row339 - No",
+  "group": "p12_row339"
+ },
+ {
+  "name": "p12_row339_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row339 - Yes",
+  "group": "p12_row339"
+ },
+ {
+  "name": "p12_row339_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row339 - No",
+  "group": "p12_row339"
+ },
+ {
+  "name": "p12_row339_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row339 - Yes",
+  "group": "p12_row339"
+ },
+ {
+  "name": "p12_row360_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row360 - No",
+  "group": "p12_row360"
+ },
+ {
+  "name": "p12_row360_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row360 - Yes",
+  "group": "p12_row360"
+ },
+ {
+  "name": "p12_row360_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row360 - No",
+  "group": "p12_row360"
+ },
+ {
+  "name": "p12_row360_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row360 - Yes",
+  "group": "p12_row360"
+ },
+ {
+  "name": "p12_row382_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row382 - No",
+  "group": "p12_row382"
+ },
+ {
+  "name": "p12_row382_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row382 - Yes",
+  "group": "p12_row382"
+ },
+ {
+  "name": "p12_row382_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row382 - No",
+  "group": "p12_row382"
+ },
+ {
+  "name": "p12_row382_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row382 - Yes",
+  "group": "p12_row382"
+ },
+ {
+  "name": "p12_row403_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row403 - No",
+  "group": "p12_row403"
+ },
+ {
+  "name": "p12_row403_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row403 - Yes",
+  "group": "p12_row403"
+ },
+ {
+  "name": "p12_row403_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row403 - No",
+  "group": "p12_row403"
+ },
+ {
+  "name": "p12_row403_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row403 - Yes",
+  "group": "p12_row403"
+ },
+ {
+  "name": "p12_row425_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row425 - No",
+  "group": "p12_row425"
+ },
+ {
+  "name": "p12_row425_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row425 - Yes",
+  "group": "p12_row425"
+ },
+ {
+  "name": "p12_row425_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row425 - No",
+  "group": "p12_row425"
+ },
+ {
+  "name": "p12_row425_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row425 - Yes",
+  "group": "p12_row425"
+ },
+ {
+  "name": "p12_row447_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row447 - No",
+  "group": "p12_row447"
+ },
+ {
+  "name": "p12_row447_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row447 - Yes",
+  "group": "p12_row447"
+ },
+ {
+  "name": "p12_row447_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row447 - No",
+  "group": "p12_row447"
+ },
+ {
+  "name": "p12_row447_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row447 - Yes",
+  "group": "p12_row447"
+ },
+ {
+  "name": "p12_row468_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row468 - No",
+  "group": "p12_row468"
+ },
+ {
+  "name": "p12_row468_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row468 - Yes",
+  "group": "p12_row468"
+ },
+ {
+  "name": "p12_row468_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row468 - No",
+  "group": "p12_row468"
+ },
+ {
+  "name": "p12_row468_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row468 - Yes",
+  "group": "p12_row468"
+ },
+ {
+  "name": "p12_row490_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row490 - No",
+  "group": "p12_row490"
+ },
+ {
+  "name": "p12_row490_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row490 - Yes",
+  "group": "p12_row490"
+ },
+ {
+  "name": "p12_row490_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row490 - No",
+  "group": "p12_row490"
+ },
+ {
+  "name": "p12_row490_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row490 - Yes",
+  "group": "p12_row490"
+ },
+ {
+  "name": "p12_row511_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row511 - No",
+  "group": "p12_row511"
+ },
+ {
+  "name": "p12_row511_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row511 - Yes",
+  "group": "p12_row511"
+ },
+ {
+  "name": "p12_row511_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row511 - No",
+  "group": "p12_row511"
+ },
+ {
+  "name": "p12_row511_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row511 - Yes",
+  "group": "p12_row511"
+ },
+ {
+  "name": "p12_row533_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row533 - No",
+  "group": "p12_row533"
+ },
+ {
+  "name": "p12_row533_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row533 - Yes",
+  "group": "p12_row533"
+ },
+ {
+  "name": "p12_row533_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row533 - No",
+  "group": "p12_row533"
+ },
+ {
+  "name": "p12_row533_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row533 - Yes",
+  "group": "p12_row533"
+ },
+ {
+  "name": "p12_row555_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row555 - No",
+  "group": "p12_row555"
+ },
+ {
+  "name": "p12_row555_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row555 - Yes",
+  "group": "p12_row555"
+ },
+ {
+  "name": "p12_row555_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row555 - No",
+  "group": "p12_row555"
+ },
+ {
+  "name": "p12_row555_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row555 - Yes",
+  "group": "p12_row555"
+ },
+ {
+  "name": "p12_row576_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row576 - No",
+  "group": "p12_row576"
+ },
+ {
+  "name": "p12_row576_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row576 - Yes",
+  "group": "p12_row576"
+ },
+ {
+  "name": "p12_row576_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row576 - No",
+  "group": "p12_row576"
+ },
+ {
+  "name": "p12_row576_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row576 - Yes",
+  "group": "p12_row576"
+ },
+ {
+  "name": "p12_row598_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row598 - No",
+  "group": "p12_row598"
+ },
+ {
+  "name": "p12_row598_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row598 - Yes",
+  "group": "p12_row598"
+ },
+ {
+  "name": "p12_row598_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row598 - No",
+  "group": "p12_row598"
+ },
+ {
+  "name": "p12_row598_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row598 - Yes",
+  "group": "p12_row598"
+ },
+ {
+  "name": "p12_row619_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row619 - No",
+  "group": "p12_row619"
+ },
+ {
+  "name": "p12_row619_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row619 - Yes",
+  "group": "p12_row619"
+ },
+ {
+  "name": "p12_row619_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row619 - No",
+  "group": "p12_row619"
+ },
+ {
+  "name": "p12_row619_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row619 - Yes",
+  "group": "p12_row619"
+ },
+ {
+  "name": "p12_row641_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row641 - No",
+  "group": "p12_row641"
+ },
+ {
+  "name": "p12_row641_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row641 - Yes",
+  "group": "p12_row641"
+ },
+ {
+  "name": "p12_row641_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row641 - No",
+  "group": "p12_row641"
+ },
+ {
+  "name": "p12_row641_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row641 - Yes",
+  "group": "p12_row641"
+ },
+ {
+  "name": "p12_row663_no",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row663 - No",
+  "group": "p12_row663"
+ },
+ {
+  "name": "p12_row663_yes",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row663 - Yes",
+  "group": "p12_row663"
+ },
+ {
+  "name": "p12_row663_no_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row663 - No",
+  "group": "p12_row663"
+ },
+ {
+  "name": "p12_row663_yes_2",
+  "page": 12,
+  "type": "checkbox",
+  "label": "row663 - Yes",
+  "group": "p12_row663"
+ },
+ {
+  "name": "p13_dot",
+  "page": 13,
+  "type": "text",
+  "label": "DOT",
+  "group": "p13_dot"
+ },
+ {
+  "name": "p13_state_id",
+  "page": 13,
+  "type": "text",
+  "label": "State ID",
+  "group": "p13_state_id"
+ },
+ {
+  "name": "p13_prefix",
+  "page": 13,
+  "type": "text",
+  "label": "Prefix",
+  "group": "p13_prefix"
+ },
+ {
+  "name": "p13_docket",
+  "page": 13,
+  "type": "text",
+  "label": "Docket",
+  "group": "p13_docket"
+ },
+ {
+  "name": "p13_safer_add_date",
+  "page": 13,
+  "type": "text",
+  "label": "SAFER add date",
+  "group": "p13_safer_add_date"
+ },
+ {
+  "name": "p13_mcs_150_update",
+  "page": 13,
+  "type": "text",
+  "label": "MCS 150 update",
+  "group": "p13_mcs_150_update"
+ },
+ {
+  "name": "p13_power_units",
+  "page": 13,
+  "type": "text",
+  "label": "Power units",
+  "group": "p13_power_units"
+ },
+ {
+  "name": "p13_trucks",
+  "page": 13,
+  "type": "text",
+  "label": "Trucks",
+  "group": "p13_trucks"
+ },
+ {
+  "name": "p13_drivers",
+  "page": 13,
+  "type": "text",
+  "label": "Drivers",
+  "group": "p13_drivers"
+ },
+ {
+  "name": "p13_bipd_required",
+  "page": 13,
+  "type": "text",
+  "label": "BIPD required",
+  "group": "p13_bipd_required"
+ },
+ {
+  "name": "p13_insurer",
+  "page": 13,
+  "type": "text",
+  "label": "Insurer",
+  "group": "p13_insurer"
+ },
+ {
+  "name": "p13_insurance_type",
+  "page": 13,
+  "type": "text",
+  "label": "Insurance type",
+  "group": "p13_insurance_type"
+ },
+ {
+  "name": "p13_policy_number",
+  "page": 13,
+  "type": "text",
+  "label": "Policy number",
+  "group": "p13_policy_number"
+ },
+ {
+  "name": "p13_policy_effective_date",
+  "page": 13,
+  "type": "text",
+  "label": "Policy effective date",
+  "group": "p13_policy_effective_date"
+ },
+ {
+  "name": "p13_policy_cancelation_date",
+  "page": 13,
+  "type": "text",
+  "label": "Policy cancelation date",
+  "group": "p13_policy_cancelation_date"
+ },
+ {
+  "name": "p13_policy_expiration_month",
+  "page": 13,
+  "type": "text",
+  "label": "Policy expiration month",
+  "group": "p13_policy_expiration_month"
+ },
+ {
+  "name": "p13_policy_expiration_date",
+  "page": 13,
+  "type": "text",
+  "label": "Policy expiration date",
+  "group": "p13_policy_expiration_date"
+ },
+ {
+  "name": "p13_drive_away_towaway",
+  "page": 13,
+  "type": "text",
+  "label": "Drive Away Towaway",
+  "group": "p13_drive_away_towaway"
+ },
+ {
+  "name": "p13_general_freight",
+  "page": 13,
+  "type": "text",
+  "label": "General freight",
+  "group": "p13_general_freight"
+ },
+ {
+  "name": "p13_motor_vehicle",
+  "page": 13,
+  "type": "text",
+  "label": "Motor vehicle",
+  "group": "p13_motor_vehicle"
+ },
+ {
+  "name": "p13_cargo_other",
+  "page": 13,
+  "type": "text",
+  "label": "Cargo other",
+  "group": "p13_cargo_other"
+ },
+ {
+  "name": "p13_interstate",
+  "page": 13,
+  "type": "text",
+  "label": "Interstate",
+  "group": "p13_interstate"
+ },
+ {
+  "name": "p13_authorized_for_hire",
+  "page": 13,
+  "type": "text",
+  "label": "Authorized for hire",
+  "group": "p13_authorized_for_hire"
+ },
+ {
+  "name": "p13_exempt_for_hire",
+  "page": 13,
+  "type": "text",
+  "label": "Exempt for hire",
+  "group": "p13_exempt_for_hire"
+ },
+ {
+  "name": "p13_private_property",
+  "page": 13,
+  "type": "text",
+  "label": "Private property",
+  "group": "p13_private_property"
+ },
+ {
+  "name": "p13_fax",
+  "page": 13,
+  "type": "text",
+  "label": "Fax",
+  "group": "p13_fax"
+ },
+ {
+  "name": "p13_mailing_address_phone",
+  "page": 13,
+  "type": "text",
+  "label": "Mailing address phone",
+  "group": "p13_mailing_address_phone"
+ },
+ {
+  "name": "p13_mailing_county",
+  "page": 13,
+  "type": "text",
+  "label": "Mailing county",
+  "group": "p13_mailing_county"
+ },
+ {
+  "name": "p13_years_in_business",
+  "page": 13,
+  "type": "text",
+  "label": "Years in business",
+  "group": "p13_years_in_business"
+ },
+ {
+  "name": "p14_sp_source_code",
+  "page": 14,
+  "type": "text",
+  "label": "SP source code",
+  "group": "p14_sp_source_code"
+ },
+ {
+  "name": "p14_sp_prep_code",
+  "page": 14,
+  "type": "text",
+  "label": "SP prep code",
+  "group": "p14_sp_prep_code"
+ },
+ {
+  "name": "p14_sp_complete_code",
+  "page": 14,
+  "type": "text",
+  "label": "SP complete code",
+  "group": "p14_sp_complete_code"
+ },
+ {
+  "name": "p14_sp_target_code",
+  "page": 14,
+  "type": "text",
+  "label": "SP target code",
+  "group": "p14_sp_target_code"
+ },
+ {
+  "name": "p14_sp_cap_app",
+  "page": 14,
+  "type": "text",
+  "label": "SP CAP app",
+  "group": "p14_sp_cap_app"
+ },
+ {
+  "name": "p14_row360_app_qs_answers_all_in",
+  "page": 14,
+  "type": "checkbox",
+  "label": "SP CAP app - App Qs answers all in:",
+  "group": "p14_row360"
+ },
+ {
+  "name": "p14_client_claims_statement_included",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Client claims statement - Included",
+  "group": "p14_client_claims_statement"
+ },
+ {
+  "name": "p14_row382_na",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Client claims statement - N/A",
+  "group": "p14_row382"
+ },
+ {
+  "name": "p14_row382_client_statement_in",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Client claims statement - Client statement in:",
+  "group": "p14_row382"
+ },
+ {
+  "name": "p14_loss_runs_last_5_years_included",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Loss runs last 5 years - Included",
+  "group": "p14_loss_runs_last_5_years"
+ },
+ {
+  "name": "p14_row403_na",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Loss runs last 5 years - N/A",
+  "group": "p14_row403"
+ },
+ {
+  "name": "p14_row403_lrs_required_all_in",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Loss runs last 5 years - LRs required all in:",
+  "group": "p14_row403"
+ },
+ {
+  "name": "p14_mvrs_per_driver_included",
+  "page": 14,
+  "type": "checkbox",
+  "label": "MVRs per driver - Included",
+  "group": "p14_mvrs_per_driver"
+ },
+ {
+  "name": "p14_row425_mvrs_report_in",
+  "page": 14,
+  "type": "checkbox",
+  "label": "MVRs per driver - MVRs report in:",
+  "group": "p14_row425"
+ },
+ {
+  "name": "p14_expiring_coi_included",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Expiring COI - Included",
+  "group": "p14_expiring_coi"
+ },
+ {
+  "name": "p14_row447_coi_in",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Expiring COI - COI in:",
+  "group": "p14_row447"
+ },
+ {
+  "name": "p14_ca_mcp_or_state_filing_report_included",
+  "page": 14,
+  "type": "checkbox",
+  "label": "CA MCP or state filing report - Included",
+  "group": "p14_ca_mcp_or_state_filing_report"
+ },
+ {
+  "name": "p14_row468_na",
+  "page": 14,
+  "type": "checkbox",
+  "label": "CA MCP or state filing report - N/A",
+  "group": "p14_row468"
+ },
+ {
+  "name": "p14_secretary_of_state_report_included",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Secretary of State report - Included",
+  "group": "p14_secretary_of_state_report"
+ },
+ {
+  "name": "p14_row490_na",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Secretary of State report - N/A",
+  "group": "p14_row490"
+ },
+ {
+  "name": "p14_website_report_included",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Website report - Included",
+  "group": "p14_website_report"
+ },
+ {
+  "name": "p14_facebook_report_included",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Facebook report - Included",
+  "group": "p14_facebook_report"
+ },
+ {
+  "name": "p14_instagram_report_included",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Instagram report - Included",
+  "group": "p14_instagram_report"
+ },
+ {
+  "name": "p14_yelp_report_included",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Yelp report - Included",
+  "group": "p14_yelp_report"
+ },
+ {
+  "name": "p14_google_street_report_per_loc_included",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Google street report per loc - Included",
+  "group": "p14_google_street_report_per_loc"
+ },
+ {
+  "name": "p14_google_overhead_report_per_loc_included",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Google overhead report per loc - Included",
+  "group": "p14_google_overhead_report_per_loc"
+ },
+ {
+  "name": "p14_vin_report_per_vehicle_included",
+  "page": 14,
+  "type": "checkbox",
+  "label": "VIN report per vehicle - Included",
+  "group": "p14_vin_report_per_vehicle"
+ },
+ {
+  "name": "p14_pics_per_vehicle_included",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Pics per vehicle - Included",
+  "group": "p14_pics_per_vehicle"
+ },
+ {
+  "name": "p14_row663_not_included",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Pics per vehicle - Not included",
+  "group": "p14_row663"
+ },
+ {
+  "name": "p14_vehicle_schedule_excel_sheet_included",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Vehicle schedule Excel sheet - Included",
+  "group": "p14_vehicle_schedule_excel_sheet"
+ },
+ {
+  "name": "p14_row684_not_included",
+  "page": 14,
+  "type": "checkbox",
+  "label": "Vehicle schedule Excel sheet - Not included",
+  "group": "p14_row684"
+ }
+]

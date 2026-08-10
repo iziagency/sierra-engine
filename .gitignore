@@ -1,0 +1,52 @@
+# secretos — jamás al repo
+watcher/.env
+watcher/.env.*
+watcher/oauth_client.json
+watcher/token.json
+watcher/token.*.json
+# llave privada de la cuenta de servicio de Drive: quien la tenga escribe en el
+# drive compartido sin consentimiento de nadie, y no caduca. Nunca al repo.
+watcher/service_account.json
+# estado efímero del motor
+watcher/engine.pid
+watcher/engine.log
+watcher/inbox/
+watcher/threads.json
+watcher/pending.json
+watcher/drop.json
+watcher/engine.out.log
+watcher/engine.out.*.log
+# resuelto por el instalador en cada máquina, distinto en cada una
+deploy/windows/python-path.txt
+# regenerables pesados
+__pycache__/
+reports/captures/
+*.pyc
+watcher/engine.log*
+client_book.json
+# expedientes de clientes reales y todo lo que el motor produce con ellos: apps
+# llenas, loss runs, COIs, fotos de manuscritos, reportes. Son datos del cliente,
+# no código, y el repo se publica en GitHub para poder instalarlo en la máquina
+# 24/7. El motor los recrea solo en cada máquina; ninguno de los 52 tests
+# depende de ellos.
+app-form/clients/
+reports/out/
+demo/
+drive-claude/
+_forked_*/
+reference/jc-originals/
+# recortes de una app manuscrita real: traen el FEIN y la licencia de conducir
+# de un chofer. Los genera la extraccion y no hacen falta despues.
+watcher/tmp_extract/
+watcher/del.json
+# insumos de prueba y horas facturadas: nada de esto lo necesita la maquina 24/7
+app-form/build/*.png
+app-form/build/*.mp3
+app-form/build/*.transcript.txt
+tools/timelog.csv
+
+# los playbooks y las notas de reunion son documentos de JC. Su equipo los
+# manda por Slack; mandarle copias solo crea un segundo juego mas viejo. Y el
+# repo es publico.
+docs/
+DEMO-lunes.md

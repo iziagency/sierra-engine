@@ -1,0 +1,8 @@
+.env
+inbox/
+*.log
+oauth_client.json
+token.json
+threads.json
+pending.json
+engine.pid

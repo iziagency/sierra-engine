@@ -1,0 +1,26 @@
+# Sierra Engine — phase 1 (CAP app + RTS Excel over Slack)
+#
+# Python 3.12.  Install with:   py -3.12 -m pip install -r deploy\requirements.txt
+#
+# Lower bounds, not pins: these are the versions the 486-test suite runs green
+# against on 2026-08-07, and every one of them is a library the phase-1 path
+# actually imports. Nothing here is aspirational — an install that succeeds and
+# then dies on the first drop because a package was guessed at is worse than an
+# install that refuses to start.
+
+slack-bolt>=1.30                # Socket Mode listener (pulls in slack-sdk)
+PyMuPDF>=1.28                   # imported as `fitz` — reads, fills and assembles the CAP app PDF
+openpyxl>=3.1                   # the RTS / Progressive workbook
+reportlab>=5.0                  # Change History.pdf, the tamper-evident audit record
+pillow>=11.0                    # crops handed to the extraction stage
+
+google-api-python-client>=2.198 # Drive: read the client folders, write the deliverables
+google-auth>=2.56
+google-auth-oauthlib>=1.4       # only used by the interactive authorize_url.py path
+google-auth-httplib2>=0.4
+
+# NOT phase 1. The web reports (SAFER, Yelp, search captures) live in
+# reports/webrpt.py and reports/vinrpt.py, which nothing in the Slack path
+# imports. They also need a US IP address to work at all. Install only when
+# phase 2 starts:
+#   pip install playwright>=1.44 && playwright install chromium

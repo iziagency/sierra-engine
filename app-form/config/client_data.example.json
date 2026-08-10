@@ -1,0 +1,210 @@
+{
+  "_comment": "Full schema example for the CAP application fill contract. Every key is optional - send what you know, the state merges across passes. Booleans check No/Yes boxes. For no/yes-% rows send true/false, a number (implies yes + pct), or {\"answer\": true, \"pct\": 40}.",
+
+  "sp_policy_code": "SP-2026-0001",
+  "source_code": "referral",
+
+  "company": {
+    "dba": "All Star Towing",
+    "first_named_insured": "All Star Towing LLC",
+    "fein": "88-1234567",
+    "entity_type": "llc",
+    "owner_name": "John Doe",
+    "owner_email": "john@allstartowing.com",
+    "contact_name": "Jane Doe",
+    "contact_email": "dispatch@allstartowing.com",
+    "contact_cell": "707-555-0142",
+    "contact_title": "Office manager",
+    "office_phone": "707-555-0100",
+    "language": "english",
+    "total_vehicles": 4,
+    "total_drivers": 3,
+    "state_filing_number": "CA 123456",
+    "usdot_number": "1234567",
+    "mc_number": "MC-654321",
+    "cross_state_lines": false,
+    "mailing_address": "123 Main St, Santa Rosa, CA 95401",
+    "location_address": "500 Industrial Ave, Santa Rosa, CA 95403",
+    "home_based": false,
+    "commercial_locations_count": 1,
+    "website": "allstartowing.com",
+    "instagram": "@allstartowing",
+    "facebook": "facebook.com/allstartowing",
+    "current_auto_carrier": "Progressive",
+    "current_auto_expires": "09/15/2026",
+    "expiring_premium": 68500,
+    "years_with_auto_insurance": 6,
+    "new_venture": false,
+    "current_wc_carrier": "AmGuard",
+    "current_wc_expires": "11/01/2026",
+    "dash_cameras": true,
+    "dash_cameras_brand": "Samsara",
+    "telematics": false,
+    "how_found_sierra": "Google search"
+  },
+
+  "coverages": {
+    "auto_liability": "1m",
+    "total_stated_value": 285000,
+    "on_hook": "100k",
+    "general_liability": "1m",
+    "garage_keepers": "150k",
+    "building_property": "none",
+    "business_personal_property": "none",
+    "inland_marine": "none",
+    "umbrella": "none",
+    "workers_comp": { "status": "active", "expires": "11/01/2026" },
+    "_workers_comp_options": "status: none | no_policy | active (+expires)"
+  },
+  "other_coverages": "",
+
+  "revenue_sources": {
+    "private_party_incoming_calls": 40,
+    "motor_clubs": { "answer": true, "pct": 30 },
+    "dealers_to_from_auctions": false,
+    "salvage_hauling": false,
+    "police_rotations": 20,
+    "impounds": 10,
+    "logistics_companies": false,
+    "freight_brokers": false,
+    "other": false
+  },
+  "revenue_other_desc": "",
+  "contracts": [
+    { "name": "AAA Northern California", "pct": 30 },
+    { "name": "Santa Rosa PD rotation", "pct": 20 }
+  ],
+
+  "operations": {
+    "tow_disabled_autos": 70,
+    "roadside_assistance": 10,
+    "private_property_impounds": false,
+    "lien_sales": false,
+    "police_impounds": 20,
+    "accident_recovery": false,
+    "used_auto_hauling": false,
+    "salvage_auto_hauling": false,
+    "new_auto_hauling": false,
+    "hazmat_hauling": false,
+    "towing_not_for_hire": false,
+    "repo_work": false,
+    "garage_operations": false,
+    "mobile_auto_repair": false,
+    "general_freight_hauling": false,
+    "contractor_operations": false,
+    "refrigerated_produce_hauling": false,
+    "non_refrigerated_produce_hauling": false,
+    "other": false
+  },
+  "operations_other_desc": "",
+
+  "goods_hauled": {
+    "private_passenger_vehicles": 90,
+    "trucks_10k_gvw": 10,
+    "motorcycles": false,
+    "watercrafts": false,
+    "refrigerated_produce": false,
+    "non_refrigerated_produce": false,
+    "general_dry_goods": false,
+    "hazmat_goods": false,
+    "other": false
+  },
+  "goods_other_desc": "",
+
+  "ops_details": {
+    "gross_revenue": 850000,
+    "allow_passengers": { "answer": true, "pct": 5 },
+    "transportation_plates": { "answer": true, "num": 2 },
+    "repossessed_plates": false,
+    "hours": "h12plus",
+    "hazardous_cargo_ever": false,
+    "safety_chains_always": true,
+    "written_vehicle_maintenance": true,
+    "written_safety_program": true,
+    "q4_10": null
+  },
+
+  "radius": {
+    "lt50": 80,
+    "51_300": 20,
+    "301_500": false,
+    "501_1000": false,
+    "1000_2500": false,
+    "2501_5000": false,
+    "5000_plus": false
+  },
+
+  "overall_description": "Family-owned towing company serving Sonoma County since 2012. Light and medium duty towing, AAA contractor, police rotation for Santa Rosa PD. Two flatbeds, one wheel-lift, one service truck.",
+
+  "vehicle_totals": { "stated_value": 285000, "power_units": 4, "trailers": 0 },
+  "vehicles": [
+    {
+      "year": 2023, "maker": "Ford", "model": "F-550", "body_type": "flatbed",
+      "gvw": 19500, "max_towed": 1, "stated_value": 110000, "perm_equip_value": 15000,
+      "vin": "1FDUF5GT3PDA12345", "onhook": "100k"
+    },
+    {
+      "year": 2021, "maker": "Hino", "model": "258", "body_type": "flatbed",
+      "gvw": 25950, "max_towed": 1, "stated_value": 95000,
+      "vin": "5PVNJ8JV6M4S67890", "onhook": "100k"
+    },
+    {
+      "year": 2019, "maker": "Ford", "model": "F-450", "body_type": "wheel-lift",
+      "gvw": 16500, "max_towed": 1, "stated_value": 60000,
+      "vin": "1FDUF4GT8KEC54321", "onhook": "50k"
+    }
+  ],
+
+  "drivers": [
+    {
+      "name": "John Doe", "state": "CA", "license": "D1234567",
+      "birthday": "03/04/1985", "position": "owner/driver",
+      "years_experience": 14, "date_of_hire": "01/2012"
+    },
+    {
+      "name": "Mike Smith", "state": "CA", "license": "D7654321",
+      "birthday": "07/22/1990", "position": "driver",
+      "years_experience": 8, "date_of_hire": "05/2018"
+    }
+  ],
+  "other_employees_count": 2,
+
+  "location": {
+    "address": "500 Industrial Ave, Santa Rosa, CA 95403",
+    "home_based": false,
+    "commercial_location_number": 1,
+    "description": "storage_lot",
+    "garage_keepers": "150k",
+    "building_property": "none",
+    "business_personal_property": "none",
+    "max_value_per_vehicle": 150000,
+    "avg_value_per_vehicle": 18000,
+    "avg_vehicles_stored": 25,
+    "max_vehicles_stored": 60,
+    "outdoor_sq_footage": 20000,
+    "indoor_sq_footage": 2000,
+    "office_sq_footage": 800,
+    "own_building": { "answer": false },
+    "dogs": false,
+    "video_recording": "Ring commercial system",
+    "central_alarm": "ADT",
+    "keys_policy": "lockbox",
+    "property_return_policy": "proper_id",
+    "weapons_policy": ["proper_id", "notify_police"],
+    "relinquish_policy": ["proper_id", "registration_verified"],
+    "details": "Fenced and lit storage yard with 24/7 camera coverage."
+  },
+
+  "loss_runs": [
+    { "year": 2025, "carrier": "Progressive", "policy_number": "CA0012345", "effective_dates": "09/15/2025 - 09/15/2026", "premium": 68500, "broker": "other" },
+    { "year": 2024, "carrier": "Progressive", "policy_number": "CA0011111", "effective_dates": "09/15/2024 - 09/15/2025", "premium": 61200, "broker": "other" },
+    { "year": 2023, "carrier": "GEICO Commercial", "policy_number": "GC998877", "effective_dates": "09/15/2023 - 09/15/2024", "premium": 54800, "broker": "other" },
+    { "year": 2022, "carrier": "GEICO Commercial", "policy_number": "GC887766", "effective_dates": "09/15/2022 - 09/15/2023", "premium": 49900, "broker": "other" },
+    { "year": 2021, "no_policy": true }
+  ],
+
+  "insured_signature": "",
+  "fields": {
+    "_comment": "escape hatch: raw AcroForm field name -> value, wins over everything"
+  }
+}
