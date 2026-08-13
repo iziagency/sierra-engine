@@ -32,8 +32,27 @@ from slack_bolt.adapter.socket_mode import SocketModeHandler
 
 HERE = Path(__file__).resolve().parent
 INBOX = HERE / "inbox"          # where dropped files land before processing
-DRIVE = Path(r"G:\Shared drives\Claude")
 PROCESS = HERE / "process_drop.py"
+
+
+def drive_target() -> str:
+    """What the startup banner says about Drive.
+
+    This used to be a filesystem path to a Drive-for-Desktop mount, and it was
+    fiction twice over: the engine writes through the Drive API and never touches
+    that mount, and the letter does not exist on the machine it now runs on. The
+    README tells the operator to read this line before letting anyone use the
+    engine, so it has to be true.
+
+    What matters on that line is which credential is in play, because that is the
+    one that expires — silently, on the seventh day, on a machine nobody watches.
+    """
+    if (HERE / "service_account.json").exists():
+        return "Claude shared drive, service account (no expiry)"
+    if (HERE / "token.json").exists():
+        return ("Claude shared drive, PERSONAL OAUTH TOKEN — dies within 7 days, "
+                "install service_account.json before leaving this unattended")
+    return "NO DRIVE CREDENTIAL — every delivery will fail"
 
 # The ceiling has to sit above the sum of the stages inside it, or a heavy drop is
 # killed mid-flight by arithmetic rather than by anything real:
@@ -1267,5 +1286,5 @@ if __name__ == "__main__":
               file=sys.stderr)
     scope = ", ".join(sorted(ALLOWED_CHANNELS)) or "ALL CHANNELS (no allowlist set)"
     print(f"[sierra-engine] listening · workspace={where} · env={env_file} · "
-          f"channels={scope} · drive={DRIVE}", file=sys.stderr)
+          f"channels={scope} · drive={drive_target()}", file=sys.stderr)
     SocketModeHandler(app, APP_TOKEN).start()

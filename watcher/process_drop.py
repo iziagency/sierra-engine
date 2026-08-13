@@ -61,7 +61,11 @@ def entry_fingerprint(entry: dict, prev_hash: str) -> str:
     payload = prev_hash + json.dumps(body, sort_keys=True, ensure_ascii=False)
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16]
 
-ROOT = Path(r"C:\dev\sierra-pacific")
+# Derived from this file, never written down. Held as an absolute path to one
+# machine, the engine ran only in that directory: an install that followed the
+# guide and cloned to C:\sierra-pacific failed on every drop with ENOENT on
+# app-form/config/client_data.example.json.
+ROOT = Path(__file__).resolve().parent.parent
 APPFORM = ROOT / "app-form"
 FILL = APPFORM / "scripts" / "fill_app.py"
 SCHEMA = APPFORM / "config" / "client_data.example.json"

@@ -25,7 +25,7 @@ HERE = Path(__file__).resolve().parent
 if str(HERE) not in sys.path:
     sys.path.insert(0, str(HERE))
 
-CLIENTS = Path(r"C:\dev\sierra-pacific\app-form\clients")
+CLIENTS = Path(__file__).resolve().parent.parent / "app-form" / "clients"
 
 # legal suffixes and noise that must not decide identity
 SUFFIXES = {
