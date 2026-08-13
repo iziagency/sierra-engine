@@ -78,11 +78,12 @@ def test_no_runners_is_empty_not_a_crash():
 
 def test_the_default_registry_names_the_reports_that_exist_today():
     # A guard on scope: the trigger wires the reports that are actually built.
-    # SAFER and CHP are deliberately absent until their parsers are written
-    # against a real capture — a blind parser would be an invented deliverable.
+    # SAFER joined once its parser was written against the real captured page in
+    # the reference QP. CHP stays out — it never appeared in that QP and there is
+    # no capture to build a parser against, so a blind one would be invented.
     names = ra.registered_names()
     assert "mcp" in names
     assert "vin" in names
     assert "web" in names
-    assert "safer" not in names, "SAFER has no parser yet — do not register a guess"
+    assert "safer" in names
     assert "chp" not in names, "CHP page has never been captured — do not register a guess"

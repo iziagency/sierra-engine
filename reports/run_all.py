@@ -93,9 +93,24 @@ def _vin(slug: str) -> list[dict]:
     return [result("vin", "VIN", problem=r.get("error"))]
 
 
-# The reports that actually exist. SAFER and CHP are absent until their parsers
-# are written against a real capture — see the module docstring.
-REGISTRY = [_mcp, _web, _vin]
+def _safer(slug: str) -> list[dict]:
+    import saferrpt
+    try:
+        r = saferrpt.run(slug)
+    except ImportError:
+        return [result("safer", "SAFER", problem=(
+            "SAFER needs Playwright — run "
+            "`pip install playwright && playwright install chromium`"))]
+    if r.get("ok"):
+        return [result("safer", "SAFER", pdf=r.get("pdf"),
+                       questions=r.get("questions", []))]
+    return [result("safer", "SAFER", problem=r.get("error"))]
+
+
+# The reports that exist. CHP is still absent — it never appeared in the
+# reference QP and has no capture to build a parser against; adding a blind one
+# would be an invented deliverable.
+REGISTRY = [_mcp, _web, _vin, _safer]
 
 
 def registered_names() -> list[str]:
