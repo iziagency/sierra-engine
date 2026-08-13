@@ -395,6 +395,68 @@ def try_detail_command(text: str, known_slug: str, say, thread_ts: str) -> bool:
     return True
 
 
+REPORTS_COMMAND = re.compile(r"^\s*(reports?|reportes?)\b", re.I)
+
+
+def try_reports_command(text: str, known_slug: str, say, thread_ts: str) -> bool:
+    """`Reports <client>` — run every report and answer with what it found.
+
+    Nothing used to run the reports: the modules had CLIs a person typed by hand,
+    so the packet carried whatever was already in the folder. This is the trigger
+    from the channel. It runs run_all, which leaves the PDFs where qp_build globs
+    for them, and reports back both what it made AND what it could not — a gap in
+    a quoting packet has to be spoken, not shipped in silence.
+
+    Kept as its own command, not folded into the QP build, because a report run is
+    slow and reaches the network, and the broker should choose when to spend that.
+    """
+    raw = (text or "").strip()
+    if not REPORTS_COMMAND.match(raw):
+        return False
+    # "report says the truck is a 2016" opens with the keyword but is prose, not a
+    # command. Treat it as a command only when it carries a client: a known thread,
+    # an SP code, or the bare keyword (± "for") asking who. Otherwise fall through
+    # so ordinary talk about a report is never hijacked into a "which client?"
+    # reply — that noise is exactly what a broker learns to ignore, and then a
+    # real prompt goes unread too.
+    rest = REPORTS_COMMAND.sub("", raw, count=1).strip()
+    has_code = bool(SP_IN_PROSE.search(raw))
+    bare = re.fullmatch(r"(for|de|para|of)?\s*", rest, re.I) is not None
+    if not (known_slug or has_code or bare):
+        return False
+
+    sys.path.insert(0, str(HERE))
+    from process_drop import CLIENTS, find_client_in_text
+    slug = known_slug or find_client_in_text(text)
+    if not slug or not (CLIENTS / slug / "state.json").exists():
+        say(text=(":grey_question: Reports for which client? Name them, give me the "
+                  "SP code, or reply in their thread."), thread_ts=thread_ts)
+        return True
+
+    say(text=f":hourglass_flowing_sand: Running the reports for *{slug}*…",
+        thread_ts=thread_ts)
+    sys.path.insert(0, str(HERE.parent / "reports"))
+    import run_all as _ra
+    r = _ra.run_all(slug)
+
+    made, questions, problems = r["made"], r["questions"], r["problems"]
+    lines = [f":page_facing_up: *{slug}* — {len(made)} report page set(s) written "
+             f"to the packet folder."]
+    if questions:
+        lines.append(f"\n*Questions for the broker ({len(questions)})*")
+        lines += [f"• [{label}] {q}" for label, q in questions]
+    if problems:
+        lines.append(f"\n*Not captured ({len(problems)})* — a gap on the "
+                     f"checklist, capture by hand or run on the US machine:")
+        lines += [f"• [{label}] {p}" for label, p in problems]
+    if not made and not questions:
+        lines.append("Nothing was produced — see the gaps above.")
+    say(text="\n".join(lines), thread_ts=thread_ts)
+    print(f"[reports] {slug}: {len(made)} made, {len(questions)} questions, "
+          f"{len(problems)} problems", flush=True)
+    return True
+
+
 def notion_stamp_line(slug: str, artifact: str) -> str:
     """The M6 stamp the guide says closes every build, ready to paste.
 
@@ -1127,6 +1189,8 @@ def handle_message(event, say, client):
     if not files_meta:
         known = thread_map().get(thread_ts, "")
         if try_assemble_command(text_early, known, say, thread_ts):
+            return
+        if try_reports_command(text_early, known, say, thread_ts):
             return
         if try_detail_command(text_early, known, say, thread_ts):
             return
