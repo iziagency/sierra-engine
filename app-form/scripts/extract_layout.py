@@ -16,8 +16,9 @@ import sys
 
 import fitz
 
-SRC = r"C:\dev\sierra-pacific\app-form\source\2026 CAP app new.pdf"
-OUT_DIR = r"C:\dev\sierra-pacific\app-form\build"
+_APPFORM = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SRC = os.path.join(_APPFORM, "source", "2026 CAP app new.pdf")
+OUT_DIR = os.path.join(_APPFORM, "build")
 
 
 def span_color(span) -> str:

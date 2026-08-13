@@ -10,8 +10,9 @@ import sys
 
 import fitz
 
-DIST = r"C:\dev\sierra-pacific\app-form\dist"
-BUILD = r"C:\dev\sierra-pacific\app-form\build"
+_APPFORM = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DIST = os.path.join(_APPFORM, "dist")
+BUILD = os.path.join(_APPFORM, "build")
 
 
 def main() -> None:

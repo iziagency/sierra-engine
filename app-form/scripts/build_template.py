@@ -29,8 +29,9 @@ import fitz
 # packet — Loss run Request form, Loss run Scores, Certificate schedule, Meta
 # data and Quoting packet Checklist. Building from the 9-page `new` file gave a
 # template that could only ever fill the front third of a QP.
-SRC = r"C:\dev\sierra-pacific\app-form\source\2026_CAP_app_ren.pdf"
-DIST = r"C:\dev\sierra-pacific\app-form\dist"
+_APPFORM = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SRC = os.path.join(_APPFORM, "source", "2026_CAP_app_ren.pdf")
+DIST = os.path.join(_APPFORM, "dist")
 
 LABEL_COLORS = {0x005493, 0x005993}
 OPTION_COLORS = {0x76D6FF, 0x56C1FF}

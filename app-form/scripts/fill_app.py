@@ -23,12 +23,33 @@ import argparse
 import json
 import os
 import re
+import subprocess
 import sys
 from copy import deepcopy
 
 import fitz
 
-ROOT = r"C:\dev\sierra-pacific\app-form"
+
+def open_in_viewer(path) -> None:
+    """Open a file in the OS default viewer, on whatever OS this is.
+
+    `os.startfile` exists only on Windows and raises AttributeError anywhere
+    else, so the live-entry flow used to abort the moment it ran on a Mac. This
+    is the interactive `--new`/`--open` path only; the engine never reaches it.
+    """
+    p = str(path)
+    if sys.platform == "darwin":
+        subprocess.run(["open", p], check=False)
+    elif os.name == "nt":
+        os.startfile(p)  # noqa: S606 - Windows default viewer
+    else:
+        subprocess.run(["xdg-open", p], check=False)
+
+# app-form/, derived from this file (scripts/ is one level down) — never written
+# down. Held as an absolute path to one machine, the engine's fill step ran only
+# in that directory, and on a Mac the Windows path was treated as a filename and
+# failed outright.
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE = os.path.join(ROOT, "dist", "CAP_app_2026_fillable.pdf")
 DEFAULTS = os.path.join(ROOT, "config", "defaults.json")
 CLIENTS = os.path.join(ROOT, "clients")
@@ -905,7 +926,7 @@ def main() -> int:
             shutil.copyfile(TEMPLATE, out_pdf)
         if not os.path.exists(state_path):
             json.dump({}, open(state_path, "w", encoding="utf-8"))
-        os.startfile(out_pdf)
+        open_in_viewer(out_pdf)
         print(f"Draft open for live entry: {out_pdf}")
         print("Type into the form during the call, save, then run --sync for the gap report.")
         return 0
@@ -984,7 +1005,7 @@ def main() -> int:
     print("\n".join(report))
 
     if args.open:
-        os.startfile(out_pdf)  # noqa: S606 - intentional, opens in default viewer
+        open_in_viewer(out_pdf)
     return 0
 
 

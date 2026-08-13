@@ -26,10 +26,18 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
-# Path(r"C:\..."), Path("/home/..."), Path('D:/...') — a literal that starts at a
-# drive letter or at the filesystem root. Relative literals are fine: those are
-# resolved against something derived from __file__.
-ABSOLUTE_LITERAL = re.compile(r"""Path\(\s*r?["'](?:[A-Za-z]:|/)""")
+# Any string literal that starts at a Windows drive letter or a POSIX root:
+# Path(r"C:\..."), ROOT = r"C:\...", "/Users/jc/...", '/home/...'. The first
+# version of this guard only caught Path(...) and missed a bare
+# `ROOT = r"C:\dev\sierra-pacific\app-form"` in fill_app.py — a string the engine
+# ran through subprocess, which failed on a Mac where that path is meaningless.
+# A drive-letter or leading-slash literal is a machine naming itself; relative
+# literals resolved against __file__ are fine and do not match.
+ABSOLUTE_LITERAL = re.compile(
+    r"""r?["']"""                                    # start of a string literal
+    r"""(?:[A-Za-z]:[\\/]"""                          # C:\  or  C:/  (Windows drive)
+    r"""|/(?:Users|home|opt|usr|var|tmp|Library|Applications|private|etc|mnt|root|Volumes)/)"""
+)  # a POSIX filesystem root — NOT a URL path like "/api/..." or "/query.asp"
 
 # The engine's own doctrine, in one line: everything hangs off this file's own
 # location. Anything else is a machine talking about itself.
@@ -39,7 +47,15 @@ DERIVED = "Path(__file__)"
 def _tracked_python() -> list[Path]:
     out = subprocess.run(["git", "ls-files", "*.py"], cwd=ROOT,
                          capture_output=True, text=True, check=True)
-    return [ROOT / line for line in out.stdout.splitlines() if line]
+    files = [ROOT / line for line in out.stdout.splitlines() if line]
+    # Test files legitimately hold fake absolute paths as fixtures — a simulated
+    # `/usr/sbin/cupsd` process line, a `C:\tmp\...` stand-in return value. The
+    # guard is about code that RUNS on another machine, not data a test invents.
+    # make_handwritten_sample.py is a Windows-only fixture generator (it needs a
+    # Windows handwriting font); it never runs on the client's machine or in the
+    # engine, so its one Windows path is allowed.
+    skip = {"make_handwritten_sample.py"}
+    return [f for f in files if "tests" not in f.parts and f.name not in skip]
 
 
 def test_no_module_hardcodes_an_absolute_path():

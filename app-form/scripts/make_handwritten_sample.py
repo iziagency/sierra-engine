@@ -8,13 +8,19 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import random
 
 import fitz
 
-SRC = r"C:\dev\sierra-pacific\app-form\source\2026 CAP app new.pdf"
-LAYOUT = r"C:\dev\sierra-pacific\app-form\build\layout_raw.json"
-OUT_DIR = r"C:\dev\sierra-pacific\app-form\build"
+_APPFORM = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SRC = os.path.join(_APPFORM, "source", "2026 CAP app new.pdf")
+LAYOUT = os.path.join(_APPFORM, "build", "layout_raw.json")
+OUT_DIR = os.path.join(_APPFORM, "build")
+# A Windows handwriting font. This tool only ever runs on a developer's Windows
+# box to mint a fake handwritten application for testing the extractor — it is
+# not engine code and does not ship to the client. Excluded from the absolute-
+# path guard by name for that reason (see tests/test_no_absolute_paths.py).
 FONT = r"C:\Windows\Fonts\segoesc.ttf"
 
 random.seed(7)

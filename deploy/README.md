@@ -170,7 +170,45 @@ completely alone. Machines without the key keep working exactly as before.
 > If the shared drive refuses to add the address, Workspace sharing settings
 > are blocking non-domain members. An admin has to allow it for that drive.
 
-## Install
+## On a Mac
+
+The engine is the same portable Python on a Mac; only the 24/7 wrapper differs.
+Everything above still applies — the same six prerequisites, the same
+service-account credential, the same `.env.sierra` — with these substitutions:
+
+- **Prerequisites**: `brew install python@3.12 git node`, then
+  `npm i -g @anthropic-ai/claude-code`, then `claude` → `/login` as the user that
+  will host the engine.
+- **The credential file** goes to `watcher/service_account.json` (forward
+  slashes, under wherever you cloned the repo, e.g. `~/sierra-pacific`).
+- **Install**: no Administrator, no PowerShell. In Terminal, as the host user:
+
+  ```bash
+  bash ~/sierra-pacific/deploy/mac/install.sh
+  ```
+
+  It runs the same checks, then registers two **launchd** agents:
+  `com.sierra.engine` (the engine, restarts on crash, runs at login) and
+  `com.sierra.engine.update` (the 30-minute auto-update). It asks once for your
+  password to disable sleep. A good run ends with the same green `listening ·
+  workspace=Sierra Pacific` line.
+
+- **For true 24/7**, the Mac must log the host user in after a reboot and never
+  sleep: *System Settings → Users & Groups → Automatic login* on, and
+  *System Settings → Displays/Battery → Prevent automatic sleeping* on power.
+- **Day to day** (Terminal): running? `launchctl print gui/$(id -u)/com.sierra.engine | grep state`.
+  Logs: `tail -f ~/sierra-pacific/watcher/engine.out.log`. Pull a fix now:
+  `launchctl kickstart -k gui/$(id -u)/com.sierra.engine.update`. Stop:
+  `launchctl bootout gui/$(id -u)/com.sierra.engine`. Remove everything:
+  `bash deploy/mac/install.sh --uninstall`.
+
+The web reports, SAFER and SOS need the browser dependency, same as on Windows:
+`python3 -m pip install playwright && python3 -m playwright install chromium`.
+
+The rest of this guide is written for Windows; read `\` as `/` and the scheduled
+task as the launchd agent.
+
+## Install (Windows)
 
 Open **PowerShell as Administrator**, signed in as the user from step 4:
 
