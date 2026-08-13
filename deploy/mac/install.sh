@@ -48,28 +48,39 @@ fi
 echo; echo "Sierra Engine - install (Mac)"; echo
 say "repo: $REPO"
 
-# --- 1. Python 3.12+ -------------------------------------------------------
-# Resolved once, here, and written into the launchd plist. launchd hands the
+# --- 1. Python -------------------------------------------------------------
+# Resolved once, here, and written into the launchd plist -- launchd hands the
 # agent a thin PATH, so trusting `python3` to be findable later is the exact
-# assumption that breaks unattended.
+# assumption that breaks unattended. An existing repo .venv wins: it is the
+# interpreter the engine already runs from, with the dependencies already in it.
 PYTHON=""
-for cand in python3.13 python3.12 python3; do
-    if command -v "$cand" >/dev/null 2>&1; then
-        v="$("$cand" -c 'import sys;print(sys.version_info[0]*100+sys.version_info[1])' 2>/dev/null || echo 0)"
-        if [ "$v" -ge 312 ]; then PYTHON="$(command -v "$cand")"; break; fi
-    fi
-done
-[ -n "$PYTHON" ] || die "Python 3.12+ not found. Install it (brew install python@3.12), then run this again."
-ok "python: $PYTHON"
+if [ -x "$REPO/.venv/bin/python" ]; then
+    PYTHON="$REPO/.venv/bin/python"
+    ok "python: $PYTHON (existing venv)"
+else
+    for cand in python3.13 python3.12 python3; do
+        if command -v "$cand" >/dev/null 2>&1; then
+            v="$("$cand" -c 'import sys;print(sys.version_info[0]*100+sys.version_info[1])' 2>/dev/null || echo 0)"
+            if [ "$v" -ge 312 ]; then PYTHON="$(command -v "$cand")"; break; fi
+        fi
+    done
+    [ -n "$PYTHON" ] || die "No usable Python. Either create a venv the engine can run from, or install Python 3.12+ (brew install python@3.12), then run this again."
+    ok "python: $PYTHON"
+fi
 
 # --- 2. Claude Code, signed in ---------------------------------------------
 # The engine shells out to `claude -p` for every extraction. The login has to
-# belong to the account whose plan absorbs the usage, because the credential is
-# read from THIS user's ~/.claude.
+# belong to the account whose plan absorbs the usage. On a Mac the token lives
+# in the login Keychain, not ~/.claude/.credentials.json, so the absence of that
+# file is NOT proof of a missing login -- checking for it is a Windows habit that
+# reports a false failure here.
 CLAUDE="$(command -v claude || true)"
-[ -n "$CLAUDE" ] || die "Claude Code CLI not found. Install Node.js LTS, then: npm i -g @anthropic-ai/claude-code"
-[ -f "$HOME/.claude/.credentials.json" ] || die "Claude Code is installed but not signed in for user '$USER'. In a terminal AS THIS USER run 'claude', then '/login'."
-ok "claude: $CLAUDE (signed in as '$USER')"
+[ -n "$CLAUDE" ] || die "Claude Code CLI not found. Install it and run 'claude' then '/login' as $USER."
+if [ -f "$HOME/.claude/.credentials.json" ]; then
+    ok "claude: $CLAUDE (signed in as '$USER')"
+else
+    warn "claude: $CLAUDE found. Could not see a credentials file, but on a Mac the login lives in the Keychain, so this is likely fine -- the engine has been running with it. If extraction starts failing, run 'claude' then '/login' as $USER."
+fi
 
 # --- 3. Slack tokens -------------------------------------------------------
 ENVFILE="$WATCHER/.env.sierra"
@@ -171,6 +182,16 @@ PLIST
 ok "auto-update agent written (every 30 min from the public repo)"
 
 # --- Load them -------------------------------------------------------------
+# A hand-started engine (someone ran `python slack_engine.py` in a terminal) is a
+# second Socket Mode connection the moment the agent starts, and Slack delivers
+# each event to exactly one of the two -- half the drops vanish with no error.
+# Stop any manual copy before launchd takes over. The agent's own instance is
+# not running yet, so this only catches the hand-started one.
+if pgrep -f 'slack_engine.py' >/dev/null 2>&1; then
+    warn "a hand-started engine is running -- stopping it so it does not collide with the service"
+    pkill -f 'slack_engine.py' 2>/dev/null || true
+    sleep 2
+fi
 if [ -f "$LOG" ]; then mv "$LOG" "$WATCHER/engine.out.$(date +%Y%m%d-%H%M%S).log" 2>/dev/null || true; fi
 rm -f "$WATCHER/engine.pid"
 for pair in "$LABEL:$PLIST" "$UPDATE_LABEL:$UPDATE_PLIST"; do
