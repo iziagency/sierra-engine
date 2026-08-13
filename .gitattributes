@@ -1,0 +1,5 @@
+# Shell scripts and launchd/plist files MUST keep LF endings. A .sh checked out
+# with CRLF fails on a Mac with "bad interpreter: /bin/bash^M", and the engine's
+# 24/7 install runs from these on JC's Mac. This overrides any local autocrlf.
+*.sh    text eol=lf
+*.plist text eol=lf
