@@ -75,12 +75,33 @@ was extracted one level too deep.
 
 ### Updates
 
+**If you cloned with git, updates arrive on their own.** The installer registers
+a second task, `SierraEngineUpdate`, that checks the repo every 30 minutes and,
+only when something actually changed, pulls it and restarts the engine. A fix
+pushed to the repo reaches this machine within half an hour with nobody touching
+it. Because the repo is public, the pull needs no login and no key.
+
+That restart is the only time the engine blinks, and it happens only on a real
+change, so a quiet week is a quiet engine. What it did, and when, is in
+`watcher\update.out.log`.
+
+To pull a fix immediately instead of waiting for the next check:
+
+```powershell
+Start-ScheduledTask -TaskName SierraEngineUpdate
+```
+
+Or by hand:
+
 ```powershell
 cd C:\sierra-pacific; git pull; Restart-ScheduledTask -TaskName SierraEngine
 ```
 
-If you downloaded the ZIP instead, download it again and extract over the top,
-then restart the task.
+**If you installed from the ZIP, none of that applies** — a ZIP has no repository
+to pull from, and the installer says so plainly instead of pretending it will
+update. Download the ZIP again and extract over the top, then restart the task.
+This is the reason to prefer `git clone`: it is the difference between fixes that
+land by themselves and fixes that need a person at this machine.
 
 ### What is not in the repo, and why
 
@@ -193,6 +214,8 @@ password"* — and repeat the test.
 | Watch it live | `Get-Content …\engine.out.log -Tail 20 -Wait` |
 | Stop it | `Stop-ScheduledTask -TaskName SierraEngine` |
 | Start it | `Start-ScheduledTask -TaskName SierraEngine` |
+| Pull a fix now | `Start-ScheduledTask -TaskName SierraEngineUpdate` |
+| What updates have run | `Get-Content C:\sierra-pacific\watcher\update.out.log -Tail 20` |
 | Remove it entirely | `.\install.ps1 -Uninstall` |
 
 The engine restarts itself if it crashes or loses its connection — the

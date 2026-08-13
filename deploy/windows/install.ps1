@@ -38,6 +38,11 @@ function Die  ($m) { Write-Host "  [stop] $m"  -ForegroundColor Red; exit 1 }
 # ---------------------------------------------------------------------------
 if ($Uninstall) {
     Write-Host "`nRemoving the Sierra Engine service`n"
+    if (Get-ScheduledTask -TaskName "${TaskName}Update" -ErrorAction SilentlyContinue) {
+        Stop-ScheduledTask       -TaskName "${TaskName}Update" -ErrorAction SilentlyContinue
+        Unregister-ScheduledTask -TaskName "${TaskName}Update" -Confirm:$false
+        Ok "scheduled task '${TaskName}Update' removed"
+    }
     if (Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue) {
         Stop-ScheduledTask       -TaskName $TaskName -ErrorAction SilentlyContinue
         Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false
@@ -178,6 +183,41 @@ try {
 Ok "scheduled task '$TaskName' registered (logon type: $mode)"
 if ($mode -eq 'Interactive') {
     Warn "this task only runs while '$env:USERNAME' is signed in. After a restart the engine stays down until someone logs in. Turn on automatic sign-in (netplwiz, untick 'Users must enter a user name and password') to close that hole."
+}
+
+# --- Auto-update -----------------------------------------------------------
+# A fix pushed to the public repo should reach this machine without anyone
+# touching it. A second task pulls every 30 minutes and restarts the engine only
+# when the pull actually changed something. Only works on a git checkout; a ZIP
+# install has nothing to pull from, and says so instead of pretending.
+$UpdTask = "${TaskName}Update"
+if (Test-Path (Join-Path $Repo '.git')) {
+    if (Get-ScheduledTask -TaskName $UpdTask -ErrorAction SilentlyContinue) {
+        Unregister-ScheduledTask -TaskName $UpdTask -Confirm:$false
+    }
+    $updRunner  = Join-Path $PSScriptRoot 'update-engine.ps1'
+    $updAction  = New-ScheduledTaskAction -Execute 'powershell.exe' `
+        -Argument "-NonInteractive -NoProfile -ExecutionPolicy Bypass -File `"$updRunner`" -TaskName $TaskName"
+    # Repeat indefinitely: a bare interval without a duration only runs for a day
+    # on 5.1, so pin a long finite duration rather than trust the default.
+    $updTrigger = New-ScheduledTaskTrigger -Once -At (Get-Date) `
+        -RepetitionInterval (New-TimeSpan -Minutes 30) `
+        -RepetitionDuration (New-TimeSpan -Days 3650)
+    $updSettings = New-ScheduledTaskSettingsSet -StartWhenAvailable `
+        -MultipleInstances IgnoreNew -ExecutionTimeLimit (New-TimeSpan -Minutes 10)
+    try {
+        Register-ScheduledTask -TaskName $UpdTask -Action $updAction -Trigger $updTrigger `
+            -Settings $updSettings -User $user -RunLevel Limited -LogonType S4U -Force | Out-Null
+    } catch {
+        Register-ScheduledTask -TaskName $UpdTask -Action $updAction -Trigger $updTrigger `
+            -Settings $updSettings -User $user -RunLevel Limited -LogonType Interactive -Force | Out-Null
+    }
+    Ok "auto-update registered ('$UpdTask', every 30 min from the public repo)"
+} else {
+    if (Get-ScheduledTask -TaskName $UpdTask -ErrorAction SilentlyContinue) {
+        Unregister-ScheduledTask -TaskName $UpdTask -Confirm:$false
+    }
+    Warn "installed from a ZIP, not a git clone - fixes will NOT arrive on their own. To get automatic updates, reinstall after: git clone https://github.com/iziagency/sierra-engine.git"
 }
 
 # --- Start it and prove it came up -----------------------------------------
