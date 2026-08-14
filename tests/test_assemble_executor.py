@@ -66,6 +66,11 @@ def test_the_code_resolves_the_client_before_any_name(tmp_path, monkeypatch):
     say = Say()
     calls = []
 
+    # A QP build now runs the reports first; stub that out so the test stays off
+    # the network and only checks the assembly path.
+    import run_all
+    monkeypatch.setattr(run_all, "run_all", lambda slug, runners=None:
+                        {"slug": slug, "made": [], "questions": [], "problems": []})
     import qp_build
     monkeypatch.setattr(qp_build, "build",
                         lambda slug, risk, to_drive=True:
@@ -85,6 +90,9 @@ def test_a_finished_build_carries_the_notion_stamp(tmp_path, monkeypatch):
                  "Falcon Ridge Towing LLC")
     say = Say()
 
+    import run_all
+    monkeypatch.setattr(run_all, "run_all", lambda slug, runners=None:
+                        {"slug": slug, "made": [], "questions": [], "problems": []})
     import qp_build
     monkeypatch.setattr(qp_build, "build",
                         lambda slug, risk, to_drive=True:
@@ -96,3 +104,33 @@ def test_a_finished_build_carries_the_notion_stamp(tmp_path, monkeypatch):
     se.try_assemble_command("Prep FALCO1 CAP QP", "", say, "t1")
     assert "Notion stamp" in say.all_text
     assert "@ Broker Qs ans in + LRs in" in say.all_text
+
+
+def test_a_qp_build_runs_the_reports_first_then_assembles(tmp_path, monkeypatch):
+    # The whole point of the change: "build the QP" is one command that produces
+    # a complete packet, because it generates the reports before the compiler
+    # looks for them. Order matters -- reports must run before build.
+    monkeypatch.setattr(pd, "CLIENTS", tmp_path)
+    make_dossier(tmp_path, "falcon-ridge-towing-llc", "FALCO1",
+                 "Falcon Ridge Towing LLC")
+    say = Say()
+    order = []
+
+    import run_all
+    monkeypatch.setattr(run_all, "run_all", lambda slug, runners=None:
+                        order.append("reports") or
+                        {"slug": slug, "made": ["/x/safer.pdf"],
+                         "questions": [("SAFER", "Fleet count differs from the app.")],
+                         "problems": [("Yelp", "served a block page")]})
+    import qp_build
+    monkeypatch.setattr(qp_build, "build", lambda slug, risk, to_drive=True:
+                        order.append("build") or
+                        {"ok": True, "name": "FALCO1 CAP tow QP 8.1.26.pdf",
+                         "pages": 20, "complete": False, "gate": [], "drive": ""})
+
+    se.try_assemble_command("Prep FALCO1 CAP QP", "", say, "t1")
+
+    assert order == ["reports", "build"], "reports have to run before the compiler"
+    body = say.all_text
+    assert "Fleet count differs" in body, "report questions must reach the broker"
+    assert "block page" in body, "report gaps must reach the broker"

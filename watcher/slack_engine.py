@@ -896,10 +896,20 @@ def _run_one_build(cmd: dict, known_slug: str, say, thread_ts: str,
             return True
         if want_qp:
             sys.path.insert(0, str(HERE.parent / "reports"))
+            # A QP is only as complete as the reports sitting in the folder, and
+            # nothing else puts them there -- so a QP build runs them first, then
+            # assembles. This is why "build the QP" alone used to come out thin:
+            # the compiler found no reports because no one had run them. One
+            # command, a complete packet.
+            say(text=f":hourglass_flowing_sand: Running the reports for *{slug}*, "
+                     f"then assembling the QP…", thread_ts=thread_ts)
+            import run_all as _ra
+            rep = _ra.run_all(slug)
             import qp_build
             r = qp_build.build(slug, "tow", to_drive=True)
             print(f"[assemble] {r.get('name')} pages={r.get('pages')} "
-                  f"drive={str(r.get('drive'))[:150]}", flush=True)
+                  f"reports={len(rep['made'])} drive={str(r.get('drive'))[:150]}",
+                  flush=True)
             if not r.get("ok"):
                 say(text=f":warning: {r.get('error')}", thread_ts=thread_ts)
                 return True
@@ -908,6 +918,14 @@ def _run_one_build(cmd: dict, known_slug: str, say, thread_ts: str,
             if r.get("gate"):
                 lines.append("Still missing before it earns the comp suffix:")
                 lines += [f"• {g}" for g in r["gate"]]
+            # The reports raised questions and gaps of their own; a broker
+            # assembling the packet has to hear them here, not find them later.
+            if rep["questions"]:
+                lines.append(f"\n*Report questions ({len(rep['questions'])})*")
+                lines += [f"• [{label}] {q}" for label, q in rep["questions"]]
+            if rep["problems"]:
+                lines.append(f"\n*Reports not captured ({len(rep['problems'])})*")
+                lines += [f"• [{label}] {p}" for label, p in rep["problems"]]
             if str(r.get("drive", "")).startswith("http"):
                 lines.append(f":file_folder: <{r['drive']}|Open in Drive>")
             lines.append(notion_stamp_line(slug, "QP"))
