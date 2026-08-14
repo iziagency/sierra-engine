@@ -104,11 +104,25 @@ fi
 [ -f "$WATCHER/drive_config.txt" ] || die "Missing watcher/drive_config.txt - it holds the resolved id of the Claude shared drive."
 
 # --- 5. Dependencies -------------------------------------------------------
-say "installing python packages..."
-"$PYTHON" -m pip install --quiet --upgrade pip
-"$PYTHON" -m pip install --quiet -r "$REPO/deploy/requirements.txt"
-"$PYTHON" -c "import slack_bolt, fitz, openpyxl, reportlab, PIL, googleapiclient" 2>/dev/null || die "packages installed but the imports still fail."
-ok "python packages installed and importable"
+# If the engine's imports already resolve, the venv is provisioned and pip is
+# not needed -- a uv-created venv has no pip module at all, and running it there
+# is a false failure. Only reach for pip when something is genuinely missing.
+IMPORTS='import slack_bolt, fitz, openpyxl, reportlab, PIL, googleapiclient'
+if "$PYTHON" -c "$IMPORTS" 2>/dev/null; then
+    ok "python packages already present in the venv"
+else
+    say "installing python packages..."
+    if "$PYTHON" -m pip --version >/dev/null 2>&1; then
+        "$PYTHON" -m pip install --quiet --upgrade pip
+        "$PYTHON" -m pip install --quiet -r "$REPO/deploy/requirements.txt"
+    elif command -v uv >/dev/null 2>&1; then
+        uv pip install --python "$PYTHON" -r "$REPO/deploy/requirements.txt"
+    else
+        die "the venv has no pip and uv is not installed, and some packages are missing. Provision the venv (uv pip install -r deploy/requirements.txt), then re-run."
+    fi
+    "$PYTHON" -c "$IMPORTS" 2>/dev/null || die "packages installed but the imports still fail."
+    ok "python packages installed and importable"
+fi
 
 # --- 6. The machine must not sleep -----------------------------------------
 # A sleeping Mac drops the Socket Mode connection. The display may sleep; the
